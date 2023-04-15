@@ -1,34 +1,66 @@
-import React, { useEffect, useRef } from 'react';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React, { useEffect, useRef } from "react";
 
 interface MobileMenuProps {
-    visible?: boolean;
+  visible?: boolean;
+  background?: boolean;
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ visible }) =>{
-    if(!visible) {
-        return null;
-    }
-    return (
-        <div className='bg-white rounded-xl w-56 absolute top-8 right-0 py-5 flex-col border-2 drop-shadow-sm flex my-3'>
-            <div className='flex flex-col gap-4 font-medium'>
-                <a href='/Home' className='px-3 text-center text-black hover:underline'>
-                    BERANDA
-                </a>
-                <hr />
-                <a className='px-3 text-center text-black hover:underline'>
-                    TENTANG
-                </a>
-                <hr />
-                <a className='px-3 text-center text-black hover:underline'>
-                    PRODUK
-                </a>
-                <hr />
-                <a className='px-3 text-center text-black hover:underline'>
-                    KONTAK
-                </a>
-            </div>
-        </div>
-    )
-}
+const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
+  // if(!visible) {
+  //     return null;
+  // }
+  const router = useRouter();
+  return (
+    <div
+      className={`bg-white absolute top-8 right-0 flex-col border-2 drop-shadow-sm flex my-3 duration-300 transition-all ${
+        visible ? "opacity-100" : "opacity-0 pointer-events-none -top-1"
+      } ${
+        background
+          ? "top-[48px] md:top-[50px] -right-5 rounded-b-xl "
+          : "rounded-xl"
+      } `}
+    >
+      <div className="flex flex-col gap-1 font-medium">
+        <Link
+          href="/"
+          className={` ${
+            router.pathname === "/" ? "text-red-500" : ""
+          } px-16 py-3 pt-4 text-center text-black hover:underline`}
+        >
+          BERANDA
+        </Link>
+        <hr />
+        <Link
+          href="/tentang"
+          className={` ${
+            router.pathname === "/tentang" ? "text-red-500" : ""
+          } px-16 py-3 pt-4 text-center text-black hover:underline`}
+        >
+          TENTANG
+        </Link>
+        <hr />
+        <Link
+          href=""
+          className={` ${
+            router.pathname === "/produk" ? "text-red-500" : ""
+          } px-16 py-3 pt-4 text-center text-black hover:underline`}
+        >
+          PRODUK
+        </Link>
+        <hr />
+        <Link
+          href=""
+          className={` ${
+            router.pathname === "/produk" ? "text-red-500" : ""
+          } px-16 py-3 pt-4 text-center text-black hover:underline`}
+        >
+          KONTAK
+        </Link>
+      </div>
+    </div>
+  );
+};
 
 export default MobileMenu;

@@ -1,7 +1,5 @@
 import NavbarItem from "./Navbaritem";
 
-import { BsChevronDown } from "react-icons/bs";
-
 import MobileMenu from "./MobileMenu";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -10,6 +8,27 @@ const TOP_OFFSET = 66;
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
+
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const toggleMobileMenu = useCallback(() => {
+    setShowMobileMenu((current) => !current);
+  }, []);
+
+  // DropDown Menu Event
+  useEffect(() => {
+    const clickHandler = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setShowMobileMenu(false);
+      }
+    }
+
+    window.addEventListener("mousedown", clickHandler);
+
+    return () => {
+      window.removeEventListener("mousedown", clickHandler);
+    };
+  })
 
   useEffect(() => {
     const handler = () => {
@@ -27,9 +46,8 @@ const Navbar = () => {
     };
   }, []);
 
-  const toggleMobileMenu = useCallback(() => {
-    setShowMobileMenu((current) => !current);
-  }, []);
+  const genericHamburgerLine = `h-[4px] w-5 rounded-full transition-all ease transform duration-300`;
+
   return (
     <nav className="w-full fixed z-40">
       <div
@@ -45,13 +63,15 @@ const Navbar = () => {
             justify-between
             duration-500
             drop-shadow-md
-            rounded-b-[10px]
             ${showBackground ? "bg-white" : ""}
             `}
       >
-        <a className="font-bold text-[22px] md:text-4xl text-red-500">ANDIRACON</a>
+        <a className="font-bold text-[22px] md:text-4xl text-red-500">
+          ANDIRACON
+        </a>
         <div
           className={`
+                items-center
                 flex-row
                 ml-8
                 gap-7
@@ -60,21 +80,32 @@ const Navbar = () => {
                 ${showBackground ? "text-black" : "text-white"}
                 `}
         >
-          <NavbarItem label="BERANDA" path="" />
-          <NavbarItem label="TENTANG" path=""/>
-          <NavbarItem label="PRODUK" path=""/>
-          <NavbarItem label="KONTAK" path=""/>
+          <NavbarItem label="BERANDA" path="/" />
+          <NavbarItem label="TENTANG" path="/tentang" />
+          <NavbarItem label="PRODUK" path="" />
+          <NavbarItem label="KONTAK" path="" />
         </div>
         <div
+          ref={menuRef}
           onClick={toggleMobileMenu}
-          className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative py-2 px-3 rounded bg-white drop-shadow-sm"
+          className="lg:hidden flex flex-col cursor-pointer relative transition-all drop-shadow-sm"
         >
-          <BsChevronDown
-            className={`text-black transition stroke-2 ${
-              showMobileMenu ? "rotate-180" : "rotate-0"
-            }`}
+          <div
+            className={`${genericHamburgerLine} ${
+              showMobileMenu ? "rotate-45 translate-y-3 my-[4px]" : "my-[2px]"
+            } ${showBackground ? "bg-black" : "bg-white"} `}
           />
-          <MobileMenu visible={showMobileMenu} />
+          <div
+            className={`${genericHamburgerLine} ${
+              showMobileMenu ? "opacity-0 my-[4px]" : "my-[2px]"
+            } ${showBackground ? "bg-black" : "bg-white"}`}
+          />
+          <div
+            className={`${genericHamburgerLine} ${
+              showMobileMenu ? "-rotate-45 -translate-y-3 my-[4px]" : "my-[2px]"
+            } ${showBackground ? "bg-black" : "bg-white"}`}
+          />
+          <MobileMenu visible={showMobileMenu} background={showBackground} />
         </div>
       </div>
     </nav>
