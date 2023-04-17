@@ -13,13 +13,18 @@ const Footer = () => {
     <footer className=" px-[3vw] md:px-[10vw] mt-[15rem] tracking-wide">
       <div className="flex bg-white border-t-2 border-neutral-400 py-10">
         <div className="flex flex-col justify-center items-center mx-auto gap-4">
-          <Image
-            src="/assets/Logo/Logo with text.svg"
+          <img
+            src="/assets/logo/Logo with text.svg"
+            alt="Logo"
+            className="w-[20vw] md:w-[10vw] "
+          />
+          {/* <Image
+            src="/assets/logo/Logo with text.svg"
             alt="Logo"
             width={1000}
             height={1000}
             className="w-[20vw] md:w-[10vw] "
-          />
+          /> */}
           <p className="mb-5 text-neutral-600 text-[13px] w-[70%] text-center">
             Web Perusahaan PT. Andiracon Sukses Makmur dapat diakses melalui
             alamat web{" "}

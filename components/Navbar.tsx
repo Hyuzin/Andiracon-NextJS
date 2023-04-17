@@ -77,13 +77,18 @@ const Navbar = () => {
         <a
           className={`font-bold text-[22px] md:text-4xl text-red-500 flex flexcol items-center`}
         >
-          <Image
-            src="/assets/Logo/logo 2 - alphabet.svg"
+          <img
+            src="/assets/logo/Icon.svg"
+            alt="logo"
+            className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
+          />
+          {/* <Image
+            src="/assets/logo/Icon.svg"
             alt="logo"
             width={100}
             height={100}
             className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
-          />
+          /> */}
           <p className="hidden md:block">ndiracon</p>
         </a>
         <div

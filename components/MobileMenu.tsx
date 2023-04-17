@@ -33,7 +33,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
         </Link>
         <hr />
         <Link
-          href="/tentang"
+          href="/about"
           className={` ${
             router.pathname === "/tentang" ? "text-red-500" : ""
           } px-16 py-3 pt-4 text-center text-black hover:underline`}
@@ -42,7 +42,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
         </Link>
         <hr />
         <Link
-          href=""
+          href="/product"
           className={` ${
             router.pathname === "/produk" ? "text-red-500" : ""
           } px-16 py-3 pt-4 text-center text-black hover:underline`}
@@ -51,7 +51,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
         </Link>
         <hr />
         <Link
-          href=""
+          href="/contact"
           className={` ${
             router.pathname === "/produk" ? "text-red-500" : ""
           } px-16 py-3 pt-4 text-center text-black hover:underline`}

@@ -1,12 +1,16 @@
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero-section";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import Image from "next/image";
 import { montserrat } from "./_app";
 
 export default function About() {
   return (
     <div>
+      <Head>
+        <title>Tentang | Andiracon</title>
+      </Head>
       <Navbar />
       <HeroSection title="Tentang kami" />
       <div className=" px-3 md:px-20 lg:px-60">
@@ -14,13 +18,18 @@ export default function About() {
           PT. Andiracon Sukses Makmur
         </p>
         <div className={`${montserrat.className} md:ml-40 lg:ml-80 py-5 `}>
-          <Image
-            src="/assets/Logo/Logo with text.svg"
+          <img
+            src="/assets/logo/Logo with text.svg"
+            alt="Logo"
+            className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
+          />
+          {/* <Image
+            src="/assets/logo/Logo with text.svg"
             alt="Logo"
             width={1000}
             height={1000}
             className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
-          />
+          /> */}
           <p className="text-justify font-medium text-[19px] lg:text-[22px] ">
             Perusahaan kami adalah salah satu produsen beton pracetak terkemuka
             di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam
@@ -53,7 +62,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
