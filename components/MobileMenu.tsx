@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 interface MobileMenuProps {
   visible?: boolean;
@@ -14,11 +14,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
   const router = useRouter();
   return (
     <div
-      className={`bg-white absolute top-8 right-0 flex-col border-2 drop-shadow-sm flex my-3 duration-300 transition-all ${
-        visible ? "opacity-100" : "opacity-0 pointer-events-none -top-1"
+      className={`bg-white absolute right-0 flex-col border-2 drop-shadow-sm flex my-3 duration-300 transition-all ${
+        visible ? "opacity-100 top-8" : "opacity-0 pointer-events-none -top-1"
       } ${
         background
-          ? "top-[48px] md:top-[50px] -right-5 rounded-b-xl "
+          ? "top-[47px] md:top-[50px] -right-5 rounded-b-xl "
           : "rounded-xl"
       } `}
     >

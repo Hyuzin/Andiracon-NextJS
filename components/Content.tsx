@@ -1,3 +1,6 @@
+import { montserrat, poppins } from "@/pages/_app";
+import Image from "next/image";
+import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductCard from "./ProductCard";
@@ -29,16 +32,18 @@ const Content = () => {
   return (
     <div className="px-5 lg:px-20" id="tentang">
       <div className="lg:pb-[100px] pb-[100px] flex flex-col md:flex-row lg:flex-row items-center">
-        <img
-          src="/images/Tentang.jpg"
+        <Image
+          src="/assets/images/Tentang.jpg"
           alt="Tentang"
-          className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 "
+          width={1000}
+          height={1000}
+          className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 pointer-events-none"
         />
         <div className="ml-0 md:ml-0 lg:ml-[75px] text-center md:text-left lg:text-left">
-          <p className="font-bold  text-[25px] lg:text-[32px] mb-5">
+          <p className={` ${poppins.className} font-medium text-[25px] lg:text-[32px] mb-5`}>
             TENTANG <span className="text-red-500">PT. ANDIRACON</span>
           </p>
-          <p className="w-[100%] md:w-[90%] lg:w-[85%] font-medium text-[15px] lg:text-[20px] text-justify mb-8">
+          <p className="w-[100%] md:w-[90%] lg:w-[85%] font-normal text-[18px] lg:text-[20px] text-justify mb-8">
             Perusahaan{" "}
             <span className="font-bold text-red-500">PT. ANDIRACON</span> adalah
             salah satu produsen beton U-Ditch terkemuka di Indonesia. Kami
@@ -48,16 +53,16 @@ const Content = () => {
             modern dan berkualitas, serta tim profesional yang berkompeten dan
             berdedikasi.
           </p>
-          <a
-            href="/Tentang"
+          <Link
+            href="/tentang"
             className="font-semibold text-white bg-red-500 px-4 py-2 rounded-md"
           >
             Selengkapnya
-          </a>
+          </Link>
         </div>
       </div>
-      <div className="text-center pb-[100px] ">
-        <p className="font-medium text-[25px] lg:text-[32px] ">Produk Kami</p>
+      <div className="text-center pb-[30vw] md:pb-[11vw] ">
+        <p className={`${montserrat.className} font-medium text-[25px] lg:text-[32px] `}>Produk Kami</p>
         <div className="">
           <Carousel
             keyBoardControl={true}
@@ -86,7 +91,7 @@ const Content = () => {
               title="Cover U Ditch"
               description="Cover U Ditch adalah produk beton pracetak 
             yang digunakan untuk menutup saluran u ditch."
-              classFalse="translate-y-[60%]"
+              classFalse="translate-y-[58%]"
             />
             <ProductCard
               image="sheet-pile"
@@ -102,6 +107,35 @@ const Content = () => {
             />
           </Carousel>
         </div>
+      </div>
+      <div className="lg:pb-[100px] md:px-[50px] pb-[100px] px-0 lg:px-[100px] flex flex-col md:flex-row lg:flex-row items-center">
+        <Image
+          src="/assets/images/tujuan.jpg"
+          width={1000}
+          height={1000}
+          alt="Tentang"
+          className=" w-[100vw] block md:hidden rounded-[30px] pointer-events-none"
+        />
+        <div className=" pr-0 lg:pr-[100px] md:pr-[50px] w-[100%] md:w-[90%] lg:w-[85%]">
+          <p className={`${poppins.className} font-medium pt-[20px] md:pt-0 text-[25px] lg:text-[32px] mb-5 text-center md:text-right lg:text-right`}>
+            TUJUAN <span className="text-red-500">PT. ANDIRACON</span>
+          </p>
+          <p className="font-normal text-[18px] lg:text-[20px] text-justify mb-8">
+            Kami berkomitmen untuk memberikan produk beton U-Ditch yang
+            berkualitas tinggi, sesuai standar nasional dan internasional, serta
+            ramah lingkungan. Kami juga menawarkan layanan purna jual yang
+            terjamin, seperti pengiriman, pemasangan, perawatan, dan garansi.
+            Kami siap melayani kebutuhan beton u-ditch Anda dengan harga yang
+            kompetitif dan waktu yang tepat.
+          </p>
+        </div>
+        <Image
+          src="/images/tujuan.jpg"
+          alt="Tentang"
+          width={1000}
+          height={1000}
+          className=" w-[50vw] hidden md:block md:w-[30vw] lg:w-[25vw] rounded-[30px] pointer-events-none"
+        />
       </div>
     </div>
   );

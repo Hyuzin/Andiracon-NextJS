@@ -3,6 +3,10 @@ import NavbarItem from "./Navbaritem";
 import MobileMenu from "./MobileMenu";
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { poppins } from "@/pages/_app";
+
 const TOP_OFFSET = 66;
 
 const Navbar = () => {
@@ -21,14 +25,14 @@ const Navbar = () => {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setShowMobileMenu(false);
       }
-    }
+    };
 
     window.addEventListener("mousedown", clickHandler);
 
     return () => {
       window.removeEventListener("mousedown", clickHandler);
     };
-  })
+  });
 
   useEffect(() => {
     const handler = () => {
@@ -48,6 +52,10 @@ const Navbar = () => {
 
   const genericHamburgerLine = `h-[4px] w-5 rounded-full transition-all ease transform duration-300`;
 
+  const router = useRouter();
+
+  const homeRoute = router.pathname === "/";
+
   return (
     <nav className="w-full fixed z-40">
       <div
@@ -55,35 +63,51 @@ const Navbar = () => {
             px-4
             md:px-20
             lg:px-40
-            py-6
+            py-[23px]
             flex
             flex-row
             items-center
             transition
             justify-between
             duration-500
-            drop-shadow-md
-            ${showBackground ? "bg-white" : ""}
+            ${router.pathname === "/tentang" ? "bg-white" : ""}
+            ${showBackground ? "bg-white drop-shadow-md" : ""}
             `}
       >
-        <a className="font-bold text-[22px] md:text-4xl text-red-500">
-          ANDIRACON
+        <a
+          className={`font-bold text-[22px] md:text-4xl text-red-500 flex flexcol items-center`}
+        >
+          <Image
+            src="/assets/Logo/logo 2 - alphabet.svg"
+            alt="logo"
+            width={100}
+            height={100}
+            className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
+          />
+          <p className="hidden md:block">ndiracon</p>
         </a>
         <div
           className={`
+                ${poppins.className}
                 items-center
                 flex-row
                 ml-8
                 gap-7
                 hidden
                 lg:flex
-                ${showBackground ? "text-black" : "text-white"}
+                ${
+                  showBackground
+                    ? "text-black"
+                    : homeRoute
+                    ? "text-white"
+                    : "text-black"
+                }
                 `}
         >
           <NavbarItem label="BERANDA" path="/" />
-          <NavbarItem label="TENTANG" path="/tentang" />
-          <NavbarItem label="PRODUK" path="" />
-          <NavbarItem label="KONTAK" path="" />
+          <NavbarItem label="TENTANG" path="/about" />
+          <NavbarItem label="PRODUK" path="/product" />
+          <NavbarItem label="KONTAK" path="/contact" />
         </div>
         <div
           ref={menuRef}
@@ -93,17 +117,23 @@ const Navbar = () => {
           <div
             className={`${genericHamburgerLine} ${
               showMobileMenu ? "rotate-45 translate-y-3 my-[4px]" : "my-[2px]"
-            } ${showBackground ? "bg-black" : "bg-white"} `}
+            } ${
+              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
+            } `}
           />
           <div
             className={`${genericHamburgerLine} ${
               showMobileMenu ? "opacity-0 my-[4px]" : "my-[2px]"
-            } ${showBackground ? "bg-black" : "bg-white"}`}
+            } ${
+              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
+            }`}
           />
           <div
             className={`${genericHamburgerLine} ${
               showMobileMenu ? "-rotate-45 -translate-y-3 my-[4px]" : "my-[2px]"
-            } ${showBackground ? "bg-black" : "bg-white"}`}
+            } ${
+              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
+            }`}
           />
           <MobileMenu visible={showMobileMenu} background={showBackground} />
         </div>
