@@ -32,18 +32,18 @@ const Content = () => {
   return (
     <div className="px-5 lg:px-20" id="tentang">
       <div className="lg:pb-[100px] pb-[100px] flex flex-col md:flex-row lg:flex-row items-center">
-        <img
+        {/* <img
           src="/assets/images/Tentang.jpg"
           alt="Tentang"
           className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 pointer-events-none"
-        />
-        {/* <Image
+        /> */}
+        <Image
           src="/assets/images/Tentang.jpg"
           alt="Tentang"
           width={1000}
           height={1000}
           className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 pointer-events-none"
-        /> */}
+        />
         <div className="ml-0 md:ml-0 lg:ml-[75px] text-center md:text-left lg:text-left">
           <p
             className={` ${poppins.className} font-medium text-[25px] lg:text-[32px] mb-5`}
@@ -120,18 +120,18 @@ const Content = () => {
         </div>
       </div>
       <div className="lg:pb-[100px] md:px-[50px] pb-[100px] px-0 lg:px-[100px] flex flex-col md:flex-row lg:flex-row items-center">
-        <img
+        {/* <img
           src="/assets/images/tujuan.jpg"
           alt="Tentang"
           className=" w-[100vw] block md:hidden rounded-[30px] pointer-events-none"
-        />
-        {/* <Image
+        /> */}
+        <Image
           src="/assets/images/tujuan.jpg"
           width={1000}
           height={1000}
           alt="Tentang"
           className=" w-[100vw] block md:hidden rounded-[30px] pointer-events-none"
-        /> */}
+        />
         <div className=" pr-0 lg:pr-[100px] md:pr-[50px] w-[100%] md:w-[90%] lg:w-[85%]">
           <p
             className={`${poppins.className} font-medium pt-[20px] md:pt-0 text-[25px] lg:text-[32px] mb-5 text-center md:text-right lg:text-right`}
@@ -147,18 +147,18 @@ const Content = () => {
             kompetitif dan waktu yang tepat.
           </p>
         </div>
-        <img
+        {/* <img
           src="/assets/images/tujuan.jpg"
           alt="Tentang"
           className=" w-[50vw] hidden md:block md:w-[30vw] lg:w-[25vw] rounded-[30px] pointer-events-none"
-        />
-        {/* <Image
+        /> */}
+        <Image
           src="/assets/images/tujuan.jpg"
           alt="Tentang"
           width={1000}
           height={1000}
           className=" w-[50vw] hidden md:block md:w-[30vw] lg:w-[25vw] rounded-[30px] pointer-events-none"
-        /> */}
+        />
       </div>
     </div>
   );

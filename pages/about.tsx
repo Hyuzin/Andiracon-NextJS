@@ -18,18 +18,18 @@ export default function About() {
           PT. Andiracon Sukses Makmur
         </p>
         <div className={`${montserrat.className} md:ml-40 lg:ml-80 py-5 `}>
-          <img
+          {/* <img
             src="/assets/logo/Logo with text.svg"
             alt="Logo"
             className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
-          />
-          {/* <Image
+          /> */}
+          <Image
             src="/assets/logo/Logo with text.svg"
             alt="Logo"
             width={1000}
             height={1000}
             className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
-          /> */}
+          />
           <p className="text-justify font-medium text-[19px] lg:text-[22px] ">
             Perusahaan kami adalah salah satu produsen beton pracetak terkemuka
             di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam
