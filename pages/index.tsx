@@ -1,8 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Content from "@/components/Content";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+
+import dynamic from "next/dynamic";
+
+const Content = dynamic(()=>import('@/components/Content'))
 
 export default function Home() {
   return (

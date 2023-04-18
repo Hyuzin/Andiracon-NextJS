@@ -1,11 +1,13 @@
 import NavbarItem from "./Navbaritem";
 
-import MobileMenu from "./MobileMenu";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { useRouter } from "next/router";
 import { poppins } from "@/pages/_app";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const MobileMenu = dynamic(()=>import('./MobileMenu')) 
 
 const TOP_OFFSET = 66;
 
