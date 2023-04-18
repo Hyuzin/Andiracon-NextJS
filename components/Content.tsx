@@ -131,7 +131,7 @@ const Content = () => {
           <p
             className={`${poppins.className} font-medium pt-[20px] md:pt-0 text-[25px] lg:text-[32px] mb-5 text-center md:text-right lg:text-right`}
           >
-            TUJUANA <span className="text-red-500">PT. ANDIRACON</span>
+            TUJUAN <span className="text-red-500">PT. ANDIRACON</span>
           </p>
           <p className="font-normal text-[18px] lg:text-[20px] text-justify mb-8">
             Kami berkomitmen untuk memberikan produk beton U-Ditch yang
@@ -150,8 +150,6 @@ const Content = () => {
         <img
           src="/assets/images/tujuan.jpg"
           alt="Tentang"
-          width={1000}
-          height={1000}
           className=" w-[50vw] hidden md:block md:w-[30vw] lg:w-[25vw] rounded-[30px] pointer-events-none"
         />
       </div>
