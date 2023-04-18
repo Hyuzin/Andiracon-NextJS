@@ -1,5 +1,5 @@
 import React from "react";
-import { montserrat } from "@/pages/data/fontData";
+import { montserrat } from "@/components/data/fontData";
 
 interface TitleSectionProps {
   title: string;

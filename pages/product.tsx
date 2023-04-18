@@ -3,7 +3,7 @@ import TitleSection from "@/components/TitleSection";
 import Content from "@/components/Content";
 import Image from "next/image";
 
-import { montserrat } from "./data/fontData";
+import { montserrat } from "../components/data/fontData";
 
 export default function Product() {
   return (

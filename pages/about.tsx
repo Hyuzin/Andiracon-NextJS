@@ -1,6 +1,6 @@
 import TitleSection from "@/components/TitleSection";
 import Image from "next/image";
-import { montserrat } from "./data/fontData";
+import { montserrat } from "../components/data/fontData";
 
 import dynamic from "next/dynamic";
 import Content from "@/components/Content";

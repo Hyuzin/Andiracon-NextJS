@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
-import { montserrat, poppins } from "./data/fontData";
+import { montserrat, poppins } from "../components/data/fontData";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
 import Content from "@/components/Content";
-import { productData } from "./data/productData";
+import { productData } from "../components/data/productData";
 import { useEffect } from "react";
 
 const Carousel = dynamic(() => import("react-multi-carousel"));

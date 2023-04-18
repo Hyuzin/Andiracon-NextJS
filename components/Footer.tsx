@@ -1,4 +1,4 @@
-import { poppins } from "@/pages/data/fontData";
+import { poppins } from "@/components/data/fontData";
 import Image from "next/image";
 import Link from "next/link";
 import {
