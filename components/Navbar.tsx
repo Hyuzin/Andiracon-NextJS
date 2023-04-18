@@ -3,7 +3,7 @@ import NavbarItem from "./Navbaritem";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { useRouter } from "next/router";
-import { poppins } from "@/pages/_app";
+import { poppins } from "@/pages/data/fontData";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 

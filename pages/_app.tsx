@@ -1,24 +1,8 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Poppins, Montserrat, Inter } from "@next/font/google";
-import { useEffect } from "react";
+
 import Head from "next/head";
-import { useRouter } from "next/router";
-
-export const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
-
-export const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
-
-const inter = Inter({
-  subsets: ["latin", "cyrillic", "greek"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+import { inter } from "./data/fontData";
 
 export default function App({ Component, pageProps }: AppProps) {
   // useEffect(() => {

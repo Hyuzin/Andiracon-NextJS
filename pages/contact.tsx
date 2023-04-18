@@ -1,4 +1,4 @@
-import HeroSection from "@/components/Hero-section";
+import HeroSection from "@/components/TitleSection";
 import dynamic from "next/dynamic";
 const Content = dynamic(() => import("@/components/Content"));
 

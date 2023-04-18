@@ -1,10 +1,12 @@
 import Hero from "@/components/Hero";
-import { montserrat, poppins } from "@/pages/_app";
+import { montserrat, poppins } from "./data/fontData";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
 import Content from "@/components/Content";
+import { productData } from "./data/productData";
+import { useEffect } from "react";
 
 const Carousel = dynamic(() => import("react-multi-carousel"));
 const ProductCard = dynamic(() => import("@/components/ProductCard"));
@@ -33,8 +35,20 @@ export default function Home() {
       items: 1,
     },
   };
+
+  const product = productData.map((item) => (
+    <ProductCard
+      key={item.id}
+      hash={item.hash}
+      image={item.image}
+      title={item.title}
+      description={item.description}
+      classFalse={item.classFalse}
+    />
+  ));
+
   return (
-    <Content title='Beranda' >
+    <Content title="Beranda">
       <Hero />
       <div className="px-5 lg:px-20" id="tentang">
         <div className="lg:pb-[100px] pb-[100px] flex flex-col md:flex-row lg:flex-row items-center">
@@ -49,6 +63,7 @@ export default function Home() {
             height={500}
             alt="Tentang"
             className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 pointer-events-none"
+            id="about"
           />
           <div className="ml-0 md:ml-0 lg:ml-[75px] text-center md:text-left lg:text-left">
             <p
@@ -57,8 +72,8 @@ export default function Home() {
               TENTANG <span className="text-red-500">PT. ANDIRACON</span>
             </p>
             <p className="w-[100%] md:w-[90%] lg:w-[85%] font-normal text-[18px] lg:text-[20px] text-justify mb-8">
-              Perusahaan{" "}
-              <span className="font-bold text-red-500">PT. ANDIRACON</span>{" "}
+              Perusahaan
+              <span className="font-bold text-red-500"> PT. ANDIRACON</span>{" "}
               adalah salah satu produsen beton U-Ditch terkemuka di Indonesia.
               Kami memiliki pengalaman lebih dari 20 tahun dalam bidang beton
               pra cetak dan telah banyak mensupply proyek proyek baik dari
@@ -67,7 +82,7 @@ export default function Home() {
               profesional yang berkompeten dan berdedikasi.
             </p>
             <Link
-              href="/tentang"
+              href="/about"
               className="font-semibold text-white bg-red-500 px-4 py-2 rounded-md"
             >
               Selengkapnya
@@ -89,39 +104,7 @@ export default function Home() {
               showDots={true}
               containerClass="py-10"
             >
-              <ProductCard
-                image="u-ditch"
-                title="U Ditch"
-                description="Beton U Ditch adalah salah satu produk beton pra cetak yang 
-            berbentuk huruf Udan digunakan untuk saluran air."
-                classFalse="translate-y-[60%]"
-              />
-              <ProductCard
-                image="box-culvert"
-                title="Box Culvert"
-                description="Box Culvert adalah salah satu jenis saluran air yang 
-            terbuat dari beton bertulang dan berbentuk persegi panjang. "
-                classFalse="translate-y-[60%]"
-              />
-              <ProductCard
-                image="cover-uditch"
-                title="Cover U Ditch"
-                description="Cover U Ditch adalah produk beton pracetak 
-            yang digunakan untuk menutup saluran u ditch."
-                classFalse="translate-y-[58%]"
-              />
-              <ProductCard
-                image="sheet-pile"
-                title="Sheet Pile"
-                description="Sheet Pile adalah material konstruksi yang berbentuk lembaran tipis dan panjang yang digunakan untuk membuat dinding penahan tanah atau air."
-                classFalse="translate-y-[66%] "
-              />
-              <ProductCard
-                image="square-pile"
-                title="Square Pile"
-                description="Square Piles adalah salah satu jenis tiang pancang yang digunakan untuk mendukung struktur bangunan di atas tanah yang tidak stabil atau lemah"
-                classFalse="translate-y-[66%]"
-              />
+              {product}
             </Carousel>
           </div>
         </div>

@@ -1,6 +1,6 @@
-import HeroSection from "@/components/Hero-section";
+import TitleSection from "@/components/TitleSection";
 import Image from "next/image";
-import { montserrat } from "./_app";
+import { montserrat } from "./data/fontData";
 
 import dynamic from "next/dynamic";
 import Content from "@/components/Content";
@@ -8,11 +8,8 @@ import Content from "@/components/Content";
 export default function About() {
   return (
     <Content title='Tentang'>
-      <HeroSection title="Tentang kami" />
+      <TitleSection title="Tentang kami" />
       <div className=" px-3 md:px-20 lg:px-60">
-        <p className="font-normal text-neutral-700 text-xl pb-10">
-          PT. Andiracon Sukses Makmur
-        </p>
         <div className={`${montserrat.className} md:ml-40 lg:ml-80 py-5 `}>
           {/* <img
             src="/assets/logo/Logo with text.svg"
@@ -34,7 +31,7 @@ export default function About() {
             fasilitas produksi yang modern dan berkualitas, serta tim
             profesional yang berkompeten dan berdedikasi.
           </p>
-          <div className="flex flex-row font-normal text-[17px] py-10 gap-4 tracking-wide">
+          <div className="flex flex-col md:flex-row font-normal text-[17px] py-10 gap-4 tracking-wide">
             <p className="">
               Kami berkomitmen untuk memberikan produk beton pracetak yang
               berkualitas tinggi, sesuai standar nasional dan internasional,

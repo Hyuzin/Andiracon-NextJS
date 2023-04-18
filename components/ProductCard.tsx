@@ -1,15 +1,17 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useState, useCallback, useEffect, useRef } from "react";
 import { BiChevronUpCircle } from "react-icons/bi";
 
 interface productCardProps {
+  hash: string;
   image: String;
   title: String;
   description: String;
   classFalse: String;
 }
 
-const ProductCard: React.FC<productCardProps> = ({image, title, description, classFalse}) => {
+const ProductCard: React.FC<productCardProps> = ({hash, image, title, description, classFalse}) => {
 
   const [clicked, setClicked] = useState(false);
 
@@ -33,6 +35,8 @@ const ProductCard: React.FC<productCardProps> = ({image, title, description, cla
     return() => window.removeEventListener('mousedown', handler)
   }, [clicked])
 
+  const router = useRouter();
+
   return (
     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/10 h-[300px] w-[300px] mx-auto rounded-lg" onClick={toggleClicked} ref={cardRef} >
       <div className="h-[300px] w-[300px] ">
@@ -51,7 +55,7 @@ const ProductCard: React.FC<productCardProps> = ({image, title, description, cla
         <p className={`${clicked ? 'opacity-100' : ''} mb-3 text-[15px] text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100`}>
           {description}
         </p>
-        <button className="rounded-lg bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+        <button type="button" onClick={() => router.push({ pathname: 'product', hash: hash })} className="rounded-lg bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
           Detail
         </button>
       </div>
