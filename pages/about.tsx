@@ -3,7 +3,7 @@ import Image from "next/image";
 import { montserrat } from "./_app";
 
 import dynamic from "next/dynamic";
-const Content = dynamic(() => import("@/components/Content"));
+import Content from "@/components/Content";
 
 export default function About() {
   return (

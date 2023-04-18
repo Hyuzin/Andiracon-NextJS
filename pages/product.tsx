@@ -1,7 +1,7 @@
 import HeroSection from "@/components/Hero-section";
 
 import dynamic from "next/dynamic";
-const Content = dynamic(() => import("@/components/Content"));
+import Content from "@/components/Content";
 
 export default function Product() {
   return (

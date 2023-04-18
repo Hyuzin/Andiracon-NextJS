@@ -4,11 +4,10 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
+import Content from "@/components/Content";
 
 const Carousel = dynamic(() => import("react-multi-carousel"));
 const ProductCard = dynamic(() => import("@/components/ProductCard"));
-
-const Content = dynamic(() => import("@/components/Content"));
 
 export default function Home() {
   const responsive = {
