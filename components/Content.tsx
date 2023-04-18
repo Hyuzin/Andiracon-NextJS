@@ -1,9 +1,11 @@
 import { montserrat, poppins } from "@/pages/_app";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ProductCard from "./ProductCard";
+
+const Carousel = dynamic(()=>import('react-multi-carousel'))
+const ProductCard = dynamic(()=>import('./ProductCard'));
 
 const Content = () => {
   const responsive = {
