@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import { useRouter } from "next/router";
 import { poppins } from "@/pages/_app";
+import Image from "next/image";
 
 const TOP_OFFSET = 66;
 
@@ -76,9 +77,11 @@ const Navbar = () => {
         <a
           className={`font-bold text-[22px] md:text-4xl text-red-500 flex flexcol items-center`}
         >
-          <img
+          <Image
             src="https://gist.githubusercontent.com/Hyuzin/fdd89fd0d20eebf43c5e6e231e0cf8a3/raw/f34bb92470964a72a24085f462f3fb272966079f/andiracon-logo.svg"
             alt="logo"
+            width={100}
+            height={100}
             className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
           />
           {/* <Image

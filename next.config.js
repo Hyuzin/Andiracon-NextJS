@@ -3,7 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
-    unoptimized: false
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'iili.io',
+        port: '',
+      }
+    ]
   }
 }
 

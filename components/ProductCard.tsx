@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState, useCallback, useEffect, useRef } from "react";
 import { BiChevronUpCircle } from "react-icons/bi";
 
@@ -35,9 +36,11 @@ const ProductCard: React.FC<productCardProps> = ({image, title, description, cla
   return (
     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/10 h-[300px] w-[300px] mx-auto rounded-lg" onClick={toggleClicked} ref={cardRef} >
       <div className="h-[300px] w-[300px] ">
-        <img
+        <Image
           src={`/assets/images/${image}.jpg`}
           alt="product"
+          width={500}
+          height={500}
           className={`${clicked ? 'rotate-3 scale-125 blur-[2px]' : ''} h-full w-full object-cover transition-transform duration-500 rounded-lg group-hover:rotate-3 group-hover:scale-125 group-hover:blur-[2px] pointer-events-none `}
         />
       </div>
