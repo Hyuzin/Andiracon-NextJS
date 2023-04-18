@@ -2,7 +2,6 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero-section";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
-import Image from "next/image";
 import { montserrat } from "./_app";
 
 export default function About() {
@@ -23,11 +22,9 @@ export default function About() {
             alt="Logo"
             className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
           /> */}
-          <Image
-            src="/assets/logo/Logo with text.svg"
+          <img
+            src="https://gist.githubusercontent.com/Hyuzin/ca30b4c6ac4e237dc37abd5026924da5/raw/3b137540767db35bc1dacfba1892c416c665b87d/andiracon-logo-text.svg"
             alt="Logo"
-            width={1000}
-            height={1000}
             className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
           />
           <p className="text-justify font-medium text-[19px] lg:text-[22px] ">

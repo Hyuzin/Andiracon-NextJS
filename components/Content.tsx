@@ -1,5 +1,4 @@
 import { montserrat, poppins } from "@/pages/_app";
-import Image from "next/image";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -37,11 +36,9 @@ const Content = () => {
           alt="Tentang"
           className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 pointer-events-none"
         /> */}
-        <Image
+        <img
           src="/assets/images/Tentang.jpg"
           alt="Tentang"
-          width={1000}
-          height={1000}
           className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 pointer-events-none"
         />
         <div className="ml-0 md:ml-0 lg:ml-[75px] text-center md:text-left lg:text-left">
@@ -125,10 +122,8 @@ const Content = () => {
           alt="Tentang"
           className=" w-[100vw] block md:hidden rounded-[30px] pointer-events-none"
         /> */}
-        <Image
+        <img
           src="/assets/images/tujuan.jpg"
-          width={1000}
-          height={1000}
           alt="Tentang"
           className=" w-[100vw] block md:hidden rounded-[30px] pointer-events-none"
         />
@@ -152,7 +147,7 @@ const Content = () => {
           alt="Tentang"
           className=" w-[50vw] hidden md:block md:w-[30vw] lg:w-[25vw] rounded-[30px] pointer-events-none"
         /> */}
-        <Image
+        <img
           src="/assets/images/tujuan.jpg"
           alt="Tentang"
           width={1000}

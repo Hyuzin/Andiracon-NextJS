@@ -1,5 +1,4 @@
 import { poppins } from "@/pages/_app";
-import Image from "next/image";
 import Link from "next/link";
 import {
   AiFillFacebook,
@@ -18,11 +17,9 @@ const Footer = () => {
             alt="Logo"
             className="w-[20vw] md:w-[10vw] "
           /> */}
-          <Image
-            src="/assets/logo/Logo with text.svg"
+          <img
+            src="https://gist.githubusercontent.com/Hyuzin/ca30b4c6ac4e237dc37abd5026924da5/raw/3b137540767db35bc1dacfba1892c416c665b87d/andiracon-logo-text.svg"
             alt="Logo"
-            width={1000}
-            height={1000}
             className="w-[20vw] md:w-[10vw] "
           />
           <p className="mb-5 text-neutral-600 text-[13px] w-[70%] text-center">
