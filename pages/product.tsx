@@ -1,17 +1,12 @@
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero-section";
-import Navbar from "@/components/Navbar";
-import Head from "next/head";
+
+import dynamic from "next/dynamic";
+const Content = dynamic(() => import("@/components/Content"));
 
 export default function Product() {
   return (
-    <>
-      <Head>
-        <title>Produk | Andiracon</title>
-      </Head>
-      <Navbar />
+    <Content title="Produk">
       <HeroSection title="Produk" />
-      <Footer />
-    </>
+    </Content>
   );
 }

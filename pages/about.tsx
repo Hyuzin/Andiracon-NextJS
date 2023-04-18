@@ -1,8 +1,8 @@
 import HeroSection from "@/components/Hero-section";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { montserrat } from "./_app";
 
+import dynamic from "next/dynamic";
 const Content = dynamic(() => import("@/components/Content"));
 
 export default function About() {
