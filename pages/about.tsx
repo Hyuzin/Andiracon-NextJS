@@ -1,17 +1,13 @@
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero-section";
-import Navbar from "@/components/Navbar";
-import Head from "next/head";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { montserrat } from "./_app";
 
+const Content = dynamic(() => import("@/components/Content"));
+
 export default function About() {
   return (
-    <div>
-      <Head>
-        <title>Tentang | Andiracon</title>
-      </Head>
-      <Navbar />
+    <Content title='Tentang'>
       <HeroSection title="Tentang kami" />
       <div className=" px-3 md:px-20 lg:px-60">
         <p className="font-normal text-neutral-700 text-xl pb-10">
@@ -62,7 +58,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Content>
   );
 }
