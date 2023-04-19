@@ -15,7 +15,7 @@ const ProductSection = ({
 }: ProductSectionProps) => {
   return (
     <div id={`${hashUrl}`} className="pb-20">
-      <div className="overflow-hidden w-[95%] h-[50vw] md:w-[97%] md:h-[40vw] lg:w-[58vw] lg:h-[30vw] rounded-t-xl rounded-l-xl">
+      <div className="overflow-hidden w-[100%] h-[50vw] md:w-[97%] md:h-[40vw] lg:w-[58vw] lg:h-[30vw] rounded-t-xl md:rounded-l-xl">
         <Image
           src={`/assets/images/${imageName}`}
           width={500}
@@ -24,12 +24,12 @@ const ProductSection = ({
           className=" w-full object-cover h-full"
         />
       </div>
-      <div className="pl-10">
-        <p className="font-semibold text-[30px] rounded-b-lg rounded-r-lg text-white bg-red-500 px-1 mb-10">
+      <div className="md:pl-10">
+        <p className="font-semibold text-[30px] rounded-b-lg md:rounded-r-lg text-white bg-red-500 px-1 mb-10">
           {title}
         </p>
       </div>
-      <div className=" pl-10 text-justify text-[17px] ">{children}</div>
+      <div className=" md:pl-10 text-justify text-[17px] ">{children}</div>
     </div>
   );
 };
