@@ -54,6 +54,10 @@ const Navbar = () => {
 
   const genericHamburgerLine = `h-[4px] w-5 rounded-full transition-all ease transform duration-300`;
 
+  const router = useRouter();
+
+  const homeRoute = router.pathname === "/";
+
   return (
     <nav className="w-full fixed z-40">
       <div
@@ -68,7 +72,6 @@ const Navbar = () => {
             transition
             justify-between
             duration-500
-            ${showBackground ? "bg-white drop-shadow-md" : ""}
             `}
       >
         <a
@@ -99,7 +102,13 @@ const Navbar = () => {
                 gap-7
                 hidden
                 lg:flex
-                ${showBackground ? "text-black" : ""}
+                ${
+                  showBackground
+                    ? "text-black"
+                    : homeRoute
+                    ? "text-white"
+                    : "text-black"
+                }
                 `}
         >
           <NavbarItem label="BERANDA" path="/" />
@@ -116,21 +125,21 @@ const Navbar = () => {
             className={`${genericHamburgerLine} ${
               showMobileMenu ? "rotate-45 translate-y-3 my-[4px]" : "my-[2px]"
             } ${
-              showBackground ? "bg-black" : 'bg-white'
+              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
             } `}
           />
           <div
             className={`${genericHamburgerLine} ${
               showMobileMenu ? "opacity-0 my-[4px]" : "my-[2px]"
             } ${
-              showBackground ? "bg-black" : 'bg-white'
+              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
             }`}
           />
           <div
             className={`${genericHamburgerLine} ${
               showMobileMenu ? "-rotate-45 -translate-y-3 my-[4px]" : "my-[2px]"
             } ${
-              showBackground ? "bg-black" : 'bg-white'
+              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
             }`}
           />
           <MobileMenu visible={showMobileMenu} background={showBackground} />

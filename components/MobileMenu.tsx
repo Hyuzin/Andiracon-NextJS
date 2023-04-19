@@ -16,11 +16,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
     <div
       className={`bg-white absolute right-0 flex-col border-2 drop-shadow-sm flex my-3 duration-300 transition-all ${
         visible ? "opacity-100 top-8" : "opacity-0 pointer-events-none -top-1"
-      } ${
-        background
-          ? "top-[47px] md:top-[50px] -right-5 rounded-b-xl "
-          : "rounded-xl"
-      } `}
+      } rounded-xl `}
     >
       <div className="flex flex-col gap-1 font-medium">
         <Link
