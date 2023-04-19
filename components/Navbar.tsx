@@ -7,7 +7,7 @@ import { poppins } from "@/components/data/fontData";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const MobileMenu = dynamic(()=>import('./MobileMenu')) 
+const MobileMenu = dynamic(() => import("./MobileMenu"));
 
 const TOP_OFFSET = 66;
 
@@ -54,10 +54,6 @@ const Navbar = () => {
 
   const genericHamburgerLine = `h-[4px] w-5 rounded-full transition-all ease transform duration-300`;
 
-  const router = useRouter();
-
-  const homeRoute = router.pathname === "/";
-
   return (
     <nav className="w-full fixed z-40">
       <div
@@ -72,7 +68,6 @@ const Navbar = () => {
             transition
             justify-between
             duration-500
-            ${router.pathname === "/tentang" ? "bg-white" : ""}
             ${showBackground ? "bg-white drop-shadow-md" : ""}
             `}
       >
@@ -104,13 +99,7 @@ const Navbar = () => {
                 gap-7
                 hidden
                 lg:flex
-                ${
-                  showBackground
-                    ? "text-black"
-                    : homeRoute
-                    ? "text-white"
-                    : "text-black"
-                }
+                ${showBackground ? "text-black" : ""}
                 `}
         >
           <NavbarItem label="BERANDA" path="/" />
@@ -123,7 +112,27 @@ const Navbar = () => {
           onClick={toggleMobileMenu}
           className="lg:hidden flex flex-col cursor-pointer relative transition-all drop-shadow-sm"
         >
-          <button>asd</button>
+          <div
+            className={`${genericHamburgerLine} ${
+              showMobileMenu ? "rotate-45 translate-y-3 my-[4px]" : "my-[2px]"
+            } ${
+              showBackground ? "bg-black" : 'bg-white'
+            } `}
+          />
+          <div
+            className={`${genericHamburgerLine} ${
+              showMobileMenu ? "opacity-0 my-[4px]" : "my-[2px]"
+            } ${
+              showBackground ? "bg-black" : 'bg-white'
+            }`}
+          />
+          <div
+            className={`${genericHamburgerLine} ${
+              showMobileMenu ? "-rotate-45 -translate-y-3 my-[4px]" : "my-[2px]"
+            } ${
+              showBackground ? "bg-black" : 'bg-white'
+            }`}
+          />
           <MobileMenu visible={showMobileMenu} background={showBackground} />
         </div>
       </div>

@@ -38,10 +38,11 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ label, path }) => {
       href={path}
       className={` ${
         routerPath
-          ? showBackground
-            ? "text-red-500 "
-            : homePath ? "text-red-500 bg-white py-1 px-4 rounded-full" : 'text-red-500'
-          : ""
+        ? 'text-red-500' : 'text-black'
+          // ? showBackground
+          //   ? "text-red-500 "
+          //   : homePath ? "text-red-500 bg-white py-1 px-4 rounded-full" : 'text-red-500'
+          // : ""
       } font-medium cursor-pointer hover:text-red-500 transition-all mx-5  rounded-full`}
     >
       {label}
