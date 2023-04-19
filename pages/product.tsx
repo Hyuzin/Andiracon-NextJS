@@ -9,7 +9,7 @@ export default function Product() {
   return (
     <Content title="Produk">
       <TitleSection title="Produk" />
-      <div className={` ${montserrat.className} px-3 md:px-20 lg:px-80`}>
+      <div className={` ${montserrat.className} px-3 md:px-20 lg:px-80 pt-10`}>
         <div id="uditch" className="pb-20">
           <Image
             src="/assets/images/u-ditch.jpg"

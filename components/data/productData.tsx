@@ -24,7 +24,7 @@ export const productData = [
     hash: 'cover',
     description:
       "Cover U Ditch adalah produk beton pracetak yang digunakan untuk menutup saluran u ditch.",
-    classFalse: "translate-y-[58%]",
+    classFalse: "translate-y-[57%]",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const productData = [
     hash: 'sheetpile',
     description:
       "Sheet Pile adalah material konstruksi yang berbentuk lembaran tipis dan panjang yang digunakan untuk membuat dinding penahan tanah atau air.",
-    classFalse: "translate-y-[66%]",
+    classFalse: "translate-y-[63%]",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const productData = [
     hash: 'squarepile',
     description:
       "Square Piles adalah salah satu jenis tiang pancang yang digunakan untuk mendukung struktur bangunan di atas tanah yang tidak stabil atau lemah.",
-    classFalse: "translate-y-[66%]",
+    classFalse: "translate-y-[63%]",
   },
 ];
     

@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className=" px-[3vw] md:px-[10vw] mt-[15rem] tracking-wide">
+    <div className=" px-[3vw] md:px-[10vw] mt-[15rem] tracking-wide">
       <div className="flex bg-white border-t-2 border-neutral-400 py-10">
         <div className="flex flex-col justify-center items-center mx-auto gap-4">
           {/* <img
@@ -60,23 +60,23 @@ const Footer = () => {
               <p>Kontak</p>
             </Link>
           </div>
-          <div className="flex flex-row gap-8 scale-150 ">
-            <Link href="">
-              <AiFillFacebook className="fill-blue-500" />
+          <div className="flex flex-row gap-8">
+            {/* <Link href="">
+              <AiFillFacebook className="fill-blue-500 scale-150" />
             </Link>
             <Link href="">
-              <AiFillInstagram className="fill-red-500" />
+              <AiFillInstagram className="fill-red-500 scale-150" />
             </Link>
             <Link href="">
-              <AiFillLinkedin className="fill-blue-900" />
+              <AiFillLinkedin className="fill-blue-900 scale-150" />
             </Link>
             <Link href="">
-              <AiOutlineWhatsApp className="fill-green-600" />
-            </Link>
+              <AiOutlineWhatsApp className="fill-green-600 scale-150" />
+            </Link> */}
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 
