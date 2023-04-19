@@ -61,7 +61,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="flex flex-row gap-8">
-            {/* <Link href="">
+            <Link href="">
               <AiFillFacebook className="fill-blue-500 scale-150" />
             </Link>
             <Link href="">
@@ -72,7 +72,7 @@ const Footer = () => {
             </Link>
             <Link href="">
               <AiOutlineWhatsApp className="fill-green-600 scale-150" />
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

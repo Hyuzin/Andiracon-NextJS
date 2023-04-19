@@ -16,7 +16,7 @@ export default function Content({ children, title }: ContentLayoutProps) {
       <Head>
         <title>{title} | Andiracon</title>
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       {children}
       <Footer />
     </>

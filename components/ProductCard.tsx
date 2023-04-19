@@ -50,7 +50,7 @@ const ProductCard: React.FC<productCardProps> = ({hash, image, title, descriptio
       </div>
       <div className={`${clicked ? 'bg-black/40 ' : ''} absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60 bg-black/0 group-hover:bg-black/40 transition duration-500`}></div>
       <div className={`${clicked ? 'translate-y-0' : classFalse} absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 `}>
-        {/* <BiChevronUpCircle className={`${clicked ? 'rotate-180' : ''} fill-white transform-all group-hover:rotate-180 w-full h-[20px] transition`}/> */}
+        <BiChevronUpCircle className={`${clicked ? 'rotate-180' : ''} fill-white transform-all group-hover:rotate-180 w-full h-[20px] transition`}/>
         <h1 className="font-dmserif text-xl font-bold text-white mt-1">{title}</h1>
         <p className={`${clicked ? 'opacity-100' : ''} mb-3 text-[15px] text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100`}>
           {description}
