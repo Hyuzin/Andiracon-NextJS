@@ -4,7 +4,8 @@ import Content from "@/components/Content";
 import Image from "next/image";
 
 import { montserrat } from "../components/data/fontData";
-import ProductSection from "@/components/productSection";
+
+import ProductSection from "@/components/ProductSection";
 
 export default function Product() {
   return (
