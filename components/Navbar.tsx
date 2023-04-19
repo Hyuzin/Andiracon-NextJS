@@ -7,7 +7,7 @@ import { poppins } from "@/components/data/fontData";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const MobileMenu = dynamic(() => import("./MobileMenu"));
+const MobileMenu = dynamic(()=>import('./MobileMenu')) 
 
 const TOP_OFFSET = 66;
 
@@ -72,6 +72,8 @@ const Navbar = () => {
             transition
             justify-between
             duration-500
+            ${router.pathname === "/tentang" ? "bg-white" : ""}
+            ${showBackground ? "bg-white" : ""}
             `}
       >
         <a
