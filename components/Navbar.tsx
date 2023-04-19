@@ -123,27 +123,7 @@ const Navbar = () => {
           onClick={toggleMobileMenu}
           className="lg:hidden flex flex-col cursor-pointer relative transition-all drop-shadow-sm"
         >
-          <div
-            className={`${genericHamburgerLine} ${
-              showMobileMenu ? "rotate-45 translate-y-3 my-[4px]" : "my-[2px]"
-            } ${
-              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
-            } `}
-          />
-          <div
-            className={`${genericHamburgerLine} ${
-              showMobileMenu ? "opacity-0 my-[4px]" : "my-[2px]"
-            } ${
-              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
-            }`}
-          />
-          <div
-            className={`${genericHamburgerLine} ${
-              showMobileMenu ? "-rotate-45 -translate-y-3 my-[4px]" : "my-[2px]"
-            } ${
-              showBackground ? "bg-black" : homeRoute ? "bg-white" : "bg-black"
-            }`}
-          />
+          <button>asd</button>
           <MobileMenu visible={showMobileMenu} background={showBackground} />
         </div>
       </div>
