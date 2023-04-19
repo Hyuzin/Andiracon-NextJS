@@ -100,7 +100,6 @@ export default function Home() {
               keyBoardControl={true}
               responsive={responsive}
               draggable={false}
-              itemClass="drop-shadow-lg"
               showDots={true}
               containerClass="py-10"
             >

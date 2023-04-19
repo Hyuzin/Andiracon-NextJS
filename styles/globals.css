@@ -5,10 +5,11 @@
 @layer base {
   html {
     @apply scroll-smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
-body{
+body {
   @apply h-full overflow-x-hidden;
 }
 
@@ -16,10 +17,10 @@ body{
   @apply h-full;
 }
 
-html{
+html {
   @apply h-full;
 }
 
-h2{
+h2 {
   font-size: 60px;
 }

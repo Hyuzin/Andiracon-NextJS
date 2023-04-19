@@ -38,7 +38,7 @@ const ProductCard: React.FC<productCardProps> = ({hash, image, title, descriptio
   const router = useRouter();
 
   return (
-    <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/10 h-[300px] w-[300px] mx-auto rounded-lg" onClick={toggleClicked} ref={cardRef} >
+    <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow h-[300px] w-[300px] mx-auto rounded-lg" onClick={toggleClicked} ref={cardRef} >
       <div className="h-[300px] w-[300px] ">
         <Image
           src={`/assets/images/${image}.jpg`}
