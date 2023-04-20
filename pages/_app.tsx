@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
 import Head from "next/head";
-import { inter } from "../components/data/fontData";
+import { montserrat } from "../components/data/fontData";
 
 export default function App({ Component, pageProps }: AppProps) {
   // useEffect(() => {
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
   // }, [])
 
   return (
-    <main className={inter.className}>
+    <main className={montserrat.className}>
       <Head>
         <link rel="shortcut icon" href="/headicon.ico" />
       </Head>

@@ -72,8 +72,7 @@ const Navbar = () => {
             transition
             justify-between
             duration-500
-            ${router.pathname === "/tentang" ? "bg-white" : ""}
-            ${showBackground ? "bg-white" : ""}
+            ${showBackground ? "bg-white" : homeRoute ? '' : 'bg-white'}
             `}
       >
         <a
@@ -93,7 +92,7 @@ const Navbar = () => {
             height={100}
             className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
           /> */}
-          <p className="hidden md:block">ndiracon</p>
+          <p className={`${poppins.className} hidden md:block `}>ndiracon</p>
         </a>
         <div
           className={`

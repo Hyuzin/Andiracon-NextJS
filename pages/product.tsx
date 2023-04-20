@@ -3,15 +3,13 @@ import TitleSection from "@/components/TitleSection";
 import Content from "@/components/Content";
 import Image from "next/image";
 
-import { montserrat } from "../components/data/fontData";
-
 import ProductSection from "@/components/ProductSection";
 
 export default function Product() {
   return (
     <Content title="Produk">
       <TitleSection title="Produk" />
-      <div className={` ${montserrat.className} px-3 md:px-20 lg:px-80 pt-10`}>
+      <div className={`px-3 md:px-20 lg:px-80 pt-10`}>
         <ProductSection
           title="U DITCH"
           imageName="u-ditch.jpg"
@@ -24,7 +22,7 @@ export default function Product() {
           keunggulan, antara lain:
           <br />
           <br />
-          <ul className="list-disc text-red-500">
+          <ul className="list-disc text-red-500 px-4">
             <li>
               <div className="text-black">
                 Kualitas beton terjamin karena diproduksi di pabrik dengan
@@ -112,7 +110,7 @@ export default function Product() {
           Jenis-jenis sheet pile antara lain:
           <br />
           <br />
-          <ul className="list-disc text-red-500">
+          <ul className="list-disc text-red-500 px-4">
             <li>
               <div className="text-black">
                 Kantilever: sheet pile yang mampu menahan beban lateral dengan
@@ -151,7 +149,7 @@ export default function Product() {
           <br /> Square Piles memiliki beberapa keuntungan, antara lain:
           <br />
           <br />
-          <ul className="list-disc text-red-500">
+          <ul className="list-disc text-red-500 px-4">
             <li>
               <div className="text-black">
                 Kapasitas beban lebih tinggi karena luas penampang yang besar

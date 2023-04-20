@@ -14,12 +14,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
   const router = useRouter();
   return (
     <div
-      className={`bg-white absolute right-0 flex-col border-2 drop-shadow-sm flex my-3 duration-300 transition-all ${
+      className={`bg-white absolute right-0 flex-col border-2 drop-shadow-sm flex my-3 duration-300 transition-all rounded-xl ${
         visible ? "opacity-100 top-8" : "opacity-0 pointer-events-none -top-1"
-      } ${
-        background
-          ? "top-[47px] md:top-[50px] -right-5 rounded-b-xl "
-          : "rounded-xl"
       } `}
     >
       <div className="flex flex-col gap-1 font-medium">
@@ -35,7 +31,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
         <Link
           href="/about"
           className={` ${
-            router.pathname === "/tentang" ? "text-red-500" : ""
+            router.pathname === "/about" ? "text-red-500" : ""
           } px-16 py-3 pt-4 text-center text-black hover:underline`}
         >
           TENTANG
@@ -44,7 +40,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
         <Link
           href="/product"
           className={` ${
-            router.pathname === "/produk" ? "text-red-500" : ""
+            router.pathname === "/product" ? "text-red-500" : ""
           } px-16 py-3 pt-4 text-center text-black hover:underline`}
         >
           PRODUK
@@ -53,7 +49,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible, background }) => {
         <Link
           href="/contact"
           className={` ${
-            router.pathname === "/produk" ? "text-red-500" : ""
+            router.pathname === "/contact" ? "text-red-500" : ""
           } px-16 py-3 pt-4 text-center text-black hover:underline`}
         >
           KONTAK

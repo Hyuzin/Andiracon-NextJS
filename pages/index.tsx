@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import { montserrat, poppins } from "../components/data/fontData";
+import { poppins } from "../components/data/fontData";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
@@ -83,7 +83,7 @@ export default function Home() {
             </p>
             <Link
               href="/about"
-              className="font-semibold text-white bg-red-500 px-4 py-2 rounded-md"
+              className="font-semibold  transition text-white hover:bg-red-300 active:bg-red-800 bg-red-500 px-4 py-2 rounded-md"
             >
               Selengkapnya
             </Link>
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
         <div className="text-center pb-[30vw] md:pb-[11vw] ">
           <p
-            className={`${montserrat.className} font-medium text-[25px] lg:text-[32px] `}
+            className={`font-medium text-[25px] lg:text-[32px] `}
           >
             Produk Kami
           </p>

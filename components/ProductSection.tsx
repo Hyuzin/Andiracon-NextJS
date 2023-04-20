@@ -15,13 +15,13 @@ const ProductSection = ({
 }: ProductSectionProps) => {
   return (
     <div id={`${hashUrl}`} className="pb-20">
-      <div className="overflow-hidden w-[100%] h-[50vw] md:w-[97%] md:h-[40vw] lg:w-[58vw] lg:h-[30vw] rounded-t-xl md:rounded-l-xl">
+      <div className="overflow-hidden h-[50vw] md:h-[40vw] lg:h-[30vw] rounded-t-xl md:rounded-l-xl md:pr-10">
         <Image
           src={`/assets/images/${imageName}`}
           width={500}
           height={500}
           alt="u-ditch"
-          className=" w-full object-cover h-full"
+          className=" w-full object-cover h-full rounded-t-xl"
         />
       </div>
       <div className="md:pl-10">
