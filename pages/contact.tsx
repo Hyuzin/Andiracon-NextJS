@@ -81,7 +81,6 @@ export default function Contact() {
                   width="100%"
                   height="450"
                   className="object-cover rounded-xl"
-                  loading="lazy"
                 ></iframe>
               </div>
               <div className="pl-5">
