@@ -15,6 +15,7 @@ import Link from "next/link";
 import { color } from "framer-motion";
 import { sendContactForm } from "@/lib/api";
 import Error from "next/error";
+import ContactButton from "@/components/ContactButton";
 
 const initValues = {
   name: "",
@@ -32,10 +33,17 @@ export default function Contact() {
 
   const { values, isLoading, error } = state;
 
-  const onBlur = ({ target }: {target: HTMLTextAreaElement | HTMLInputElement}) =>
-    setTouched((prev: any) => ({ ...prev, [target.name]: true }));
+  const onBlur = ({
+    target,
+  }: {
+    target: HTMLTextAreaElement | HTMLInputElement;
+  }) => setTouched((prev: any) => ({ ...prev, [target.name]: true }));
 
-  const handleChange = ({ target }: {target: HTMLTextAreaElement | HTMLInputElement}) =>
+  const handleChange = ({
+    target,
+  }: {
+    target: HTMLTextAreaElement | HTMLInputElement;
+  }) =>
     setState((prev: any) => ({
       ...prev,
       values: {
@@ -83,7 +91,7 @@ export default function Contact() {
                   className="object-cover rounded-xl"
                 ></iframe>
               </div>
-              <div className="pl-5">
+              <div className="pl-5 pb-5">
                 <div className="py-5 pt-10 md:pt-5">
                   <span className="font-semibold"> Alamat : </span> <br /> Ruko
                   Botania, Jl.Raya Narogong, Jl. Pesona Metropolitan Jl. Pratama
@@ -97,6 +105,47 @@ export default function Contact() {
                   >
                     0821 - 2388 - 6656
                   </Link>
+                </div>
+                <div className="pb-5 flex flex-col gap-3">
+                  <span className="font-semibold">Social Media: </span>
+                  <div className="grid grid-cols-3 gap-x-0 gap-y-3">
+                    <ContactButton
+                      href="https://wa.link/0merpx"
+                      borderColor="green.600"
+                      color="green.600"
+                      hoverBgColor="green.600"
+                      hoverColor="white"
+                    >
+                      WhatsApp
+                    </ContactButton>
+                    <ContactButton
+                      href="https://send-email-xi.vercel.app/"
+                      borderColor="blue.500"
+                      color="blue.500"
+                      hoverBgColor="blue.500"
+                      hoverColor="white"
+                    >
+                      Facebook
+                    </ContactButton>
+                    <ContactButton
+                      href="https://www.linkedin.com/in/imam-wahyudi-owner-andiracon-precast-concrete-134a251a8"
+                      borderColor="blue.900"
+                      color="blue.900"
+                      hoverBgColor="blue.900"
+                      hoverColor="white"
+                    >
+                      LinkedIn
+                    </ContactButton>
+                    <ContactButton
+                      href="https://send-email-xi.vercel.app/"
+                      borderColor="purple.500"
+                      color="purple.500"
+                      hoverBgColor="purple.500"
+                      hoverColor="white"
+                    >
+                      Instagram
+                    </ContactButton>
+                  </div>
                 </div>
               </div>
             </div>
@@ -171,7 +220,7 @@ export default function Contact() {
                 <FormErrorMessage>Input wajib diisi.</FormErrorMessage>
               </FormControl>
               <Button
-                width={{ base: '100%', md: '40' }}
+                width={{ base: "100%", md: "40" }}
                 variant="outline"
                 isLoading={isLoading}
                 bgColor="red.500"
