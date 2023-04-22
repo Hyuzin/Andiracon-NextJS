@@ -118,7 +118,7 @@ export default function Contact() {
                 </div>
                 <div className="pb-5 flex flex-col gap-3">
                   <span className="font-semibold">Social Media: </span>
-                  <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-3">
+                  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-3">
                     <ContactButton
                       href="https://wa.link/0merpx"
                       borderColor="green.600"
