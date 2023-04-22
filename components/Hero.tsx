@@ -12,8 +12,8 @@ const Hero = () => {
         height={769}
         alt="Hero"
         className="w-full object-cover h-[100vw] md:h-[56.25vw] brightness-75 pointer-events-none"
-        initial={{ opacity:1, height:'52.25vw' }}
-        animate={{ height:'56.25vw' }}
+        initial={{ y:-50 }}
+        animate={{ y:0, transition: {ease:'easeOut'} }}
       />
       {/* <Image src="/assets/images/Header.png" width={1000} height={1000} alt="Hero" className="w-full object-cover h-[100vw] md:h-[56.25vw] brightness-75 pointer-events-none"/> */}
       <div
