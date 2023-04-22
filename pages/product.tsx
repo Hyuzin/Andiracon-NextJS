@@ -2,6 +2,7 @@ import TitleSection from "@/components/TitleSection";
 
 import Content from "@/components/Content";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import ProductSection from "@/components/ProductSection";
 
@@ -9,7 +10,11 @@ export default function Product() {
   return (
     <Content title="Produk">
       <TitleSection title="Produk" />
-      <div className={`px-3 md:px-20 lg:px-80 pt-10`}>
+      <motion.div
+        className={`px-3 md:px-20 lg:px-80 pt-10`}
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
+      >
         <ProductSection
           title="U DITCH"
           imageName="u-ditch.jpg"
@@ -184,7 +189,7 @@ export default function Product() {
           memerlukan perawatan dan inspeksi berkala untuk mencegah kerusakan
           atau retak yang dapat mengurangi kapasitas beban tiang.
         </ProductSection>
-      </div>
+      </motion.div>
     </Content>
   );
 }

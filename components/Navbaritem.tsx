@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 interface NavbarItemProps {
   label: string;
@@ -31,19 +34,23 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ label, path }) => {
   }, []);
 
   const routerPath = router.pathname === path;
-  const homePath = router.pathname === '/';
+  const homePath = router.pathname === "/";
 
   return (
     <Link
       href={path}
       className={` ${
-        routerPath
-          ? showBackground
-            ? "text-red-500 "
-            : homePath ? "text-red-500 bg-white py-1 px-4 rounded-full" : 'text-red-500'
-          : ""
-      } font-medium cursor-pointer hover:text-red-500 transition-all mx-5  rounded-full`}
+        routerPath ? homePath ? showBackground ? 'text-red-500' : 'text-white' : "text-red-500" : ""
+      } font-medium cursor-pointer hover:text-red-500 transition-all mx-5  rounded-full relative flex`}
     >
+      {routerPath && (
+        <motion.span
+          initial={{ width: 0 }}
+          animate={{width: '100%'}}
+          className={`absolute left-0 top-full block h-[2px] w-full bg-red-500
+          }`}
+        />
+      )}
       {label}
     </Link>
   );

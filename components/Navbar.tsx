@@ -112,10 +112,10 @@ const Navbar = () => {
                 }
                 `}
         >
-          <NavbarItem label="BERANDA" path="/" />
-          <NavbarItem label="TENTANG" path="/about" />
-          <NavbarItem label="PRODUK" path="/product" />
-          <NavbarItem label="KONTAK" path="/contact" />
+          <NavbarItem label="Beranda" path="/" />
+          <NavbarItem label="Tentang" path="/about" />
+          <NavbarItem label="Produk" path="/product" />
+          <NavbarItem label="Kontak" path="/contact" />
         </div>
         <div
           ref={menuRef}

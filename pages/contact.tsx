@@ -12,10 +12,16 @@ import { Textarea } from "@chakra-ui/textarea";
 import { useState } from "react";
 import { Button } from "@chakra-ui/button";
 import Link from "next/link";
-import { color } from "framer-motion";
 import { sendContactForm } from "@/lib/api";
-import Error from "next/error";
 import ContactButton from "@/components/ContactButton";
+import { motion } from "framer-motion";
+
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const initValues = {
   name: "",
@@ -80,7 +86,11 @@ export default function Contact() {
     <ChakraProvider>
       <Content title="Kontak">
         <TitleSection title="Kontak" />
-        <div className={`px-3 md:px-20 lg:px-60 itmes-center `}>
+        <motion.div
+          className={`px-3 md:px-20 lg:px-60 itmes-center `}
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
+        >
           <div className="bg-white shadow-md rounded-xl flex flex-col md:flex-row gap-4 items-center">
             <div className="w-full">
               <div className="w-full h-[450px]">
@@ -117,6 +127,7 @@ export default function Contact() {
                       hoverColor="white"
                     >
                       WhatsApp
+                      <FaWhatsapp className="ml-2" />
                     </ContactButton>
                     <ContactButton
                       href="https://send-email-xi.vercel.app/"
@@ -126,6 +137,7 @@ export default function Contact() {
                       hoverColor="white"
                     >
                       Facebook
+                      <FaFacebook className="ml-2" />
                     </ContactButton>
                     <ContactButton
                       href="https://www.linkedin.com/in/imam-wahyudi-owner-andiracon-precast-concrete-134a251a8"
@@ -135,6 +147,7 @@ export default function Contact() {
                       hoverColor="white"
                     >
                       LinkedIn
+                      <FaLinkedin className="ml-2" />
                     </ContactButton>
                     <ContactButton
                       href="https://send-email-xi.vercel.app/"
@@ -144,6 +157,7 @@ export default function Contact() {
                       hoverColor="white"
                     >
                       Instagram
+                      <FaInstagram className="ml-2" />
                     </ContactButton>
                   </div>
                 </div>
@@ -239,7 +253,7 @@ export default function Contact() {
               </Button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </Content>
     </ChakraProvider>
   );

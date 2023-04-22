@@ -2,13 +2,18 @@ import TitleSection from "@/components/TitleSection";
 import Image from "next/image";
 
 import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
 import Content from "@/components/Content";
 
 export default function About() {
   return (
-    <Content title='Tentang'>
+    <Content title="Tentang">
       <TitleSection title="Tentang kami" />
-      <div className=" px-3 md:px-20 lg:px-60">
+      <motion.div
+        className=" px-3 md:px-20 lg:px-60"
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
+      >
         <div className={`md:px-20 lg:px-32 py-10`}>
           {/* <img
             src="/assets/logo/Logo with text.svg"
@@ -53,7 +58,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Content>
   );
 }
