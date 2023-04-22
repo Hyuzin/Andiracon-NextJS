@@ -54,7 +54,7 @@ export default function Home() {
       <motion.div
         className="px-5 lg:px-20"
         id="tentang"
-        initial={{ opacity: 0, x: 20 }}
+        initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: .3 } }}
         viewport={{ once: true }}
       >

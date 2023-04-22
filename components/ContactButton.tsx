@@ -25,18 +25,13 @@ const ContactButton: React.FC<contactProps> = ({
 
   const buttonClick = useCallback(() => {
     setState((current) => !current);
-  }, []);
-  const router = useRouter();
-
-  const handleClick = (e: any) => {
-    e.preventDefault();
     setTimeout(() => {
-      router.push(href);
+      setState((current) => current);
     }, 500);
-  };
-
+  }, []);
+  
   return (
-    <Link href={href} onClick={handleClick}>
+    <Link href={href}>
       <Button
         variant="outline"
         borderColor={borderColor}

@@ -88,7 +88,7 @@ export default function Contact() {
         <TitleSection title="Kontak" />
         <motion.div
           className={`px-3 md:px-20 lg:px-60 itmes-center `}
-          initial={{ opacity: 0, x: 20 }}
+          initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
         >
           <div className="bg-white shadow-md rounded-xl flex flex-col md:flex-row gap-4 items-center">

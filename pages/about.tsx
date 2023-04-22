@@ -11,7 +11,7 @@ export default function About() {
       <TitleSection title="Tentang kami" />
       <motion.div
         className=" px-3 md:px-20 lg:px-60"
-        initial={{ opacity: 0, x: 20 }}
+        initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
         <div className={`md:px-20 lg:px-32 py-10`}>

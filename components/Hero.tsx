@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative h-[100vw] md:h-[56.25vw] " id="Home">
+    <div className="relative h-[170vw] md:h-[56.25vw] " id="Home">
       <motion.img
         src="https://iili.io/Hv8Yv9V.png"
         width={1200}
         height={769}
         alt="Hero"
-        className="w-full object-cover h-[100vw] md:h-[56.25vw] brightness-75 pointer-events-none"
+        className="w-full object-cover h-[170vw] md:h-[56.25vw] brightness-75 pointer-events-none"
         initial={{ y:-50 }}
         animate={{ y:0, transition: {ease:'easeOut'} }}
       />
@@ -20,7 +20,7 @@ const Hero = () => {
         className={` ${poppins.className} absolute top-[45%] md:top-[45%] lg:top-[40%] ml-4 md:ml-20 lg:ml-40 `}
       >
         <motion.p
-          className="text-red-500 font-bold h-full leading-normal text-[25px] md:text-4xl lg:text-7xl drop-shadow-lg"
+          className="text-red-500 font-bold h-full leading-normal text-[35px] md:text-4xl lg:text-7xl drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
@@ -31,7 +31,7 @@ const Hero = () => {
           PT. ANDIRACON
         </motion.p>
         <motion.p
-          className="w-[90%] md:w-[60%] lg:w-[50%] font-medium lg:leading-10 text-white text-[15px] md:text-xl lg:text-3xl drop-shadow-lg"
+          className="w-[90%] md:w-[60%] lg:w-[50%] font-medium lg:leading-10 text-white text-[22px] md:text-xl lg:text-3xl drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: 1,
