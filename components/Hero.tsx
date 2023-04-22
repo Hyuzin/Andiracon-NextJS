@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative h-[170vw] md:h-[56.25vw] " id="Home">
+    <div className="relative h-[180vw] md:h-[56.25vw] " id="Home">
       <motion.img
         src="https://iili.io/Hv8Yv9V.png"
         width={1200}
         height={769}
         alt="Hero"
-        className="w-full object-cover h-[170vw] md:h-[56.25vw] brightness-75 pointer-events-none"
+        className="w-full object-cover h-[180vw] md:h-[56.25vw] brightness-75 pointer-events-none"
         initial={{ y:-50 }}
         animate={{ y:0, transition: {ease:'easeOut'} }}
       />
