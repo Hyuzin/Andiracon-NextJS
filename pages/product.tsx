@@ -6,22 +6,97 @@ import { motion } from "framer-motion";
 
 import ProductSection from "@/components/ProductSection";
 
+import { Link } from "react-scroll";
+
 export default function Product() {
   return (
     <Content title="Produk">
       <TitleSection title="Produk" />
       <motion.div
-        className={`px-3 md:px-20 lg:px-80 pt-10`}
+        className={`max-w-[53rem] mx-auto px-5 pt-20`}
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
+        <div className="font-semibold text-3xl">
+          Produk yang tersedia di perusahaan kami.
+          <div className="border-2 border-grey md:w-[40%] p-10 my-14">
+            <ul className="font-medium text-lg list-decimal list-inside">
+              <span className="font-bold text-2xl">Produk</span>
+              <Link
+                to="uditch"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group pt-2 cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    U Ditch
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="box"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Box Culvert
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="cover"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Cover U Ditch
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="sheetpile"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Sheet Pile
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="squarepile"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Square Pile
+                  </span>
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </div>
         <ProductSection
-          title="U DITCH"
+          title="U Ditch"
           imageName="u-ditch.jpg"
           hashUrl="uditch"
         >
-          <span className="font-medium"> U Ditch </span>Adalah salah satu produk
-          beton precast yang digunakan untuk saluran drainase. Bentuknya
+          <span className="font-medium"> U Ditch </span> Adalah salah satu
+          produk beton precast yang digunakan untuk saluran drainase. Bentuknya
           menyerupai huruf U yang terbalik, sehingga dapat mengalirkan air
           dengan baik. <br /> <br /> Beton pra cetak U Ditch memiliki beberapa
           keunggulan, antara lain:

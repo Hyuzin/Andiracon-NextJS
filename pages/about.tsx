@@ -10,7 +10,7 @@ export default function About() {
     <Content title="Tentang">
       <TitleSection title="Tentang kami" />
       <motion.div
-        className=" px-3 md:px-20 lg:px-60"
+        className=" px-5 md:px-20 lg:px-60"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
@@ -27,7 +27,7 @@ export default function About() {
             height={500}
             className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
           />
-          <p className="text-justify font-medium text-[19px] lg:text-[22px] ">
+          <p className="text-justify font-medium text-[18px] lg:text-[22px] ">
             Perusahaan kami adalah salah satu produsen beton pracetak terkemuka
             di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam
             bidang beton pracetak dan telah melayani berbagai proyek
