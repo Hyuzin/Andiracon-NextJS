@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import ProductSection from "@/components/ProductSection";
 
 import { Link } from "react-scroll";
+import { poppins } from "@/components/data/fontData";
 
 export default function Product() {
   return (
@@ -17,10 +18,10 @@ export default function Product() {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
-        <div className="font-semibold text-3xl">
+        <div className={`${poppins.className} font-medium text-3xl`}>
           Produk yang tersedia di perusahaan kami.
           <div className="border-2 border-grey md:w-[40%] p-10 my-14">
-            <ul className="font-medium text-lg list-decimal list-inside">
+            <ul className="font-medium text-[15px] list-decimal list-inside">
               <span className="font-bold text-2xl">Produk</span>
               <Link
                 to="uditch"

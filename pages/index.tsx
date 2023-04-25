@@ -50,15 +50,19 @@ export default function Home() {
 
   return (
     <Content title="Beranda">
-      <Hero />
+      <Hero className="mb-10" />
       <motion.div
         className="px-5 lg:px-20"
         id="tentang"
         initial={{ opacity: 0, x: -20 }}
-        whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: .3 } }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.2, duration: 0.3 },
+        }}
         viewport={{ once: true }}
       >
-        <div className="lg:pb-[100px] pb-[100px] flex flex-col md:flex-row lg:flex-row items-center">
+        <div className="md:px-[50px] pb-[100px] px-0 lg:px-[100px] flex flex-col md:flex-row lg:flex-row items-center">
           {/* <img
           src="/assets/images/Tentang.jpg"
           alt="Tentang"
@@ -69,24 +73,21 @@ export default function Home() {
             width={500}
             height={500}
             alt="Tentang"
-            className=" w-[100vw] md:w-[40vw] lg:w-[30vw] ml-0 lg:ml-10 pointer-events-none"
+            className=" w-[50vw] md:w-[30vw] lg:w-[25vw] rounded-[30px] pointer-events-none"
             id="about"
           />
-          <div className="ml-0 md:ml-0 lg:ml-[75px] text-center md:text-left lg:text-left">
+          <div className="pr-0 lg:pl-[100px] md:pl-[50px] w-[100%] md:w-[90%] lg:w-[85%]">
             <p
-              className={` ${poppins.className} font-medium text-[25px] lg:text-[32px] mb-5`}
+              className={` ${poppins.className} font-medium text-center lg:text-left text-[25px] lg:text-[32px] mb-5`}
             >
-              TENTANG <span className="text-red-500">PT. ANDIRACON</span>
+              TENTANG <span className="text-red-500">Andiracon Group</span>
             </p>
-            <p className="w-[100%] md:w-[90%] lg:w-[85%] font-normal text-[18px] lg:text-[20px] text-justify mb-8">
+            <p className="font-normal text-[18px] lg:text-[20px] text-justify mb-8">
               Perusahaan
-              <span className="font-bold text-red-500">
-                {" "}
-                PT. ANDIRACON
-              </span>{" "}
-              adalah salah satu produsen beton U-Ditch terkemuka di Indonesia.
-              Kami memiliki pengalaman lebih dari 20 tahun dalam bidang beton
-              pra cetak dan telah banyak mensupply proyek proyek baik dari
+              <span className="font-bold text-red-500"> Andiracon</span> adalah
+              salah satu produsen beton U-Ditch terkemuka di Indonesia. Kami
+              memiliki pengalaman lebih dari 20 tahun dalam bidang beton pra
+              cetak dan telah banyak mensupply proyek proyek baik dari
               Pemerintah Pusat, Pemerintah Daerah, dan Swasta. Kami memiliki
               fasilitas produksi yang modern dan berkualitas, serta tim
               profesional yang berkompeten dan berdedikasi.
@@ -132,7 +133,7 @@ export default function Home() {
             <p
               className={`${poppins.className} font-medium pt-[20px] md:pt-0 text-[25px] lg:text-[32px] mb-5 text-center md:text-right lg:text-right`}
             >
-              TUJUAN <span className="text-red-500">PT. ANDIRACON</span>
+              TUJUAN <span className="text-red-500">Andiracon Group</span>
             </p>
             <p className="font-normal text-[18px] lg:text-[20px] text-justify mb-8">
               Kami berkomitmen untuk memberikan produk beton U-Ditch yang

@@ -46,13 +46,13 @@ export default function About() {
               harga yang kompetitif dan waktu yang tepat.
             </p>
             <p className="text-justify">
-              <span className="font-medium text-red-500">PT. Andiracon </span>
+              <span className="font-medium text-red-500">Andiracon Group </span>
               dapat menjadi mitra andal bagi pelanggan-pelanggan yang
               membutuhkan solusi-solusi beton untuk proyek-proyek konstruksi.
               <br />
               <br /> Dengan pengalaman lebih dari 20 tahun di bidang pracetak
               beton,
-              <span className="font-medium text-red-500"> PT. Andiracon </span>
+              <span className="font-medium text-red-500"> Andiracon Group </span>
               siap melayani kebutuhan beton Anda dengan profesionalisme dan
               integritas.
             </p>

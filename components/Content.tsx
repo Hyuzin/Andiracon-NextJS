@@ -15,6 +15,8 @@ export default function Content({ children, title }: ContentLayoutProps) {
     <>
       <Head>
         <title>{title} | Andiracon</title>
+        <meta name="description" content="Beli produk beton precast di perusahaan kami!" />
+        <meta property="og:title" content="Beton Precast" />
       </Head>
       <Navbar />
       {children}
