@@ -7,7 +7,10 @@ import Content from "@/components/Content";
 
 export default function About() {
   return (
-    <Content title="Tentang">
+    <Content
+      title="Tentang Kami | Andiracon - Menyediakan Layanan Terbaik untuk Anda"
+      description="Perusahaan kami adalah salah satu produsen beton pracetak terkemuka di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam bidang beton pracetak dan telah melayani berbagai proyek infrastruktur, perumahan, industri, dan pertanian. Kami memiliki fasilitas produksi yang modern dan berkualitas, serta tim profesional yang berkompeten dan berdedikasi."
+    >
       <TitleSection title="Tentang kami" />
       <motion.div
         className=" px-5 md:px-20 lg:px-60"
@@ -52,7 +55,10 @@ export default function About() {
               <br />
               <br /> Dengan pengalaman lebih dari 20 tahun di bidang pracetak
               beton,
-              <span className="font-medium text-red-500"> Andiracon Group </span>
+              <span className="font-medium text-red-500">
+                {" "}
+                Andiracon Group{" "}
+              </span>
               siap melayani kebutuhan beton Anda dengan profesionalisme dan
               integritas.
             </p>

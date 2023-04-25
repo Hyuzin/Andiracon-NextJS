@@ -11,7 +11,10 @@ import { poppins } from "@/components/data/fontData";
 
 export default function Product() {
   return (
-    <Content title="Produk">
+    <Content
+      title="Produk Beton Berkualitas dengan Harga Terjangkau | Produk"
+      description="Pilihan Produk Beton Terbaik untuk Kebutuhan Konstruksi Anda"
+    >
       <TitleSection title="Produk" />
       <motion.div
         className={`max-w-[53rem] mx-auto px-5 pt-20`}

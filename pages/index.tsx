@@ -6,7 +6,6 @@ import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
 import Content from "@/components/Content";
 import { productData } from "../components/data/productData";
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Carousel = dynamic(() => import("react-multi-carousel"));
@@ -49,7 +48,10 @@ export default function Home() {
   ));
 
   return (
-    <Content title="Beranda">
+    <Content
+      title="Jasa Beton Terbaik di Indonesia | Beranda"
+      description="Andiracon adalah salah satu produsen beton precast terkemuka di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam bidang beton pra cetak dan telah banyak mensupply proyek proyek baik dari Pemerintah Pusat, Pemerintah Daerah, dan Swasta. Kami memiliki fasilitas produksi yang modern dan berkualitas, serta tim profesional yang berkompeten dan berdedikasi."
+    >
       <Hero className="mb-10" />
       <motion.div
         className="px-5 lg:px-20"
@@ -85,7 +87,7 @@ export default function Home() {
             <p className="font-normal text-[18px] lg:text-[20px] text-justify mb-8">
               Perusahaan
               <span className="font-bold text-red-500"> Andiracon</span> adalah
-              salah satu produsen beton U-Ditch terkemuka di Indonesia. Kami
+              salah satu produsen beton precast terkemuka di Indonesia. Kami
               memiliki pengalaman lebih dari 20 tahun dalam bidang beton pra
               cetak dan telah banyak mensupply proyek proyek baik dari
               Pemerintah Pusat, Pemerintah Daerah, dan Swasta. Kami memiliki

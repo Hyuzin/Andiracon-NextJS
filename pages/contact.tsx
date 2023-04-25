@@ -84,7 +84,10 @@ export default function Contact() {
 
   return (
     <ChakraProvider>
-      <Content title="Kontak">
+      <Content
+        title="Kontak Andiracon | Informasi Kontak, Alamat, dan Peta Lokasi"
+        description="Hubungi Andiracon Group untuk Mendapatkan Layanan Terbaik"
+      >
         <TitleSection title="Kontak" />
         <motion.div
           className={`px-3 md:px-20 lg:px-60 itmes-center `}
