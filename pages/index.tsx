@@ -50,6 +50,7 @@ export default function Home() {
   return (
     <Content
       title="Jasa Beton Terbaik di Indonesia | Beranda"
+      metaTitle="Andiracon | Jasa Beton Terbaik di Indonesia | Jasa Beton | Beton Precast | Jual Beton | Jual Beton Precast | Kontsruksi Beton | Bangunan Beton"
       description="Andiracon adalah salah satu produsen beton precast terkemuka di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam bidang beton pra cetak dan telah banyak mensupply proyek proyek baik dari Pemerintah Pusat, Pemerintah Daerah, dan Swasta. Kami memiliki fasilitas produksi yang modern dan berkualitas, serta tim profesional yang berkompeten dan berdedikasi."
     >
       <Hero className="mb-10" />

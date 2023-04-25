@@ -86,6 +86,7 @@ export default function Contact() {
     <ChakraProvider>
       <Content
         title="Kontak Andiracon | Informasi Kontak, Alamat, dan Peta Lokasi"
+        metaTitle="Kontak Kami - Whatsapp | Linkedin | Email"
         description="Hubungi Andiracon Group untuk Mendapatkan Layanan Terbaik"
       >
         <TitleSection title="Kontak" />

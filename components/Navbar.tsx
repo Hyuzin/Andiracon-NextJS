@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { poppins } from "@/components/data/fontData";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const MobileMenu = dynamic(()=>import('./MobileMenu')) 
 
@@ -75,8 +76,9 @@ const Navbar = () => {
             ${showBackground ? "bg-white" : homeRoute ? '' : 'bg-white'}
             `}
       >
-        <a
+        <Link
           className={`font-bold text-[22px] md:text-4xl text-red-500 flex flexcol items-center`}
+          href='/'
         >
           <Image
             src="https://gist.githubusercontent.com/Hyuzin/fdd89fd0d20eebf43c5e6e231e0cf8a3/raw/f34bb92470964a72a24085f462f3fb272966079f/andiracon-logo.svg"
@@ -93,7 +95,7 @@ const Navbar = () => {
             className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
           /> */}
           <p className={`${poppins.className} hidden md:block `}>ndiracon</p>
-        </a>
+        </Link>
         <div
           className={`
                 ${poppins.className}

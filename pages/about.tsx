@@ -9,6 +9,7 @@ export default function About() {
   return (
     <Content
       title="Tentang Kami | Andiracon - Menyediakan Layanan Terbaik untuk Anda"
+      metaTitle="Tentang Andiracon | Perusahaan beton dengan layanan terbaik di indonesia"
       description="Perusahaan kami adalah salah satu produsen beton pracetak terkemuka di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam bidang beton pracetak dan telah melayani berbagai proyek infrastruktur, perumahan, industri, dan pertanian. Kami memiliki fasilitas produksi yang modern dan berkualitas, serta tim profesional yang berkompeten dan berdedikasi."
     >
       <TitleSection title="Tentang kami" />
