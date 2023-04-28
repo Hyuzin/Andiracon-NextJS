@@ -13,7 +13,6 @@ export default function Product() {
   return (
     <Content
       title="Produk Beton Berkualitas dengan Harga Terjangkau | Produk"
-      metaTitle="Beton U Ditch| Beton Box Culvert | Cover U Ditch | Sheet Pile | Square Pile "
       description="Pilihan Produk Beton Terbaik untuk Kebutuhan Konstruksi Anda"
     >
       <TitleSection title="Produk" />

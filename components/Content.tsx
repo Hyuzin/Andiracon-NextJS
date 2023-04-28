@@ -8,14 +8,12 @@ const Footer = dynamic(() => import("@/components/Footer"));
 type ContentLayoutProps = {
   children: React.ReactNode;
   title: string;
-  metaTitle: string;
   description: string;
 };
 
 export default function Content({
   children,
   title,
-  metaTitle,
   description,
 }: ContentLayoutProps) {
   return (
@@ -23,7 +21,11 @@ export default function Content({
       <Head>
         <title>{title}</title>
         <meta name="description" content={`${description}`} />
-        <meta property="title" content={`${metaTitle}`} />
+        <link rel="shortcut icon" href="/headicon2.ico" />
+        <meta
+          name="keywords"
+          content="Andiracon , Jasa Beton Terbaik di Indonesia , Jasa Beton , Beton Precast , Jual Beton , Jual Beton Precast , Kontsruksi Beton , Bangunan Beton, material beton, u ditch , sheet pile, square pile, beton struktural, beton jalan"
+        />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

@@ -8,7 +8,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-const MobileMenu = dynamic(()=>import('./MobileMenu')) 
+const MobileMenu = dynamic(() => import("./MobileMenu"));
 
 const TOP_OFFSET = 66;
 
@@ -66,26 +66,33 @@ const Navbar = () => {
             px-4
             md:px-20
             lg:px-40
-            py-[23px]
+            py-[15px]
             flex
             flex-row
             items-center
             transition
             justify-between
             duration-500
-            ${showBackground ? "bg-white" : homeRoute ? '' : 'bg-white'}
+            ${showBackground ? "bg-white" : homeRoute ? "" : "bg-white"}
             `}
       >
         <Link
-          className={`font-bold text-[22px] md:text-4xl text-red-500 flex flexcol items-center`}
-          href='/'
+          className={`font-bold text-red-500 text-[22px] md:text-3xl flex flex-row items-center`}
+          href="/"
         >
-          <Image
+          {/* <Image
             src="https://gist.githubusercontent.com/Hyuzin/fdd89fd0d20eebf43c5e6e231e0cf8a3/raw/f34bb92470964a72a24085f462f3fb272966079f/andiracon-logo.svg"
             alt="logo"
             width={100}
             height={100}
             className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
+          /> */}
+          <Image
+            src="/assets/logo/andiracon logo ori.png"
+            alt="logo"
+            width={100}
+            height={100}
+            className="w-[50px] pointer-events-none "
           />
           {/* <Image
             src="/assets/logo/Icon.svg"
@@ -94,7 +101,7 @@ const Navbar = () => {
             height={100}
             className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
           /> */}
-          <p className={`${poppins.className} hidden md:block `}>ndiracon</p>
+          <p className={`${poppins.className} hidden md:block `}>Andiracon</p>
         </Link>
         <div
           className={`

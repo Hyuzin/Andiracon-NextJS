@@ -18,17 +18,35 @@ const Footer = () => {
             alt="Logo"
             className="w-[20vw] md:w-[10vw] "
           /> */}
-          <Image
+          {/* <Image
             src="https://gist.githubusercontent.com/Hyuzin/ca30b4c6ac4e237dc37abd5026924da5/raw/3b137540767db35bc1dacfba1892c416c665b87d/andiracon-logo-text.svg"
             alt="Logo"
             width={100}
             height={100}
             className="w-[20vw] md:w-[10vw] "
-          />
+          /> */}
+          <div className="flex flex-row items-center pointer-events-none">
+            <Image
+              src="/assets/logo/andiracon logo ori.png"
+              alt="logo"
+              width={100}
+              height={100}
+              className="w-[10vw] md:w-[3vw] "
+            />
+            <p
+              className={`${poppins.className} font-bold text-2xl text-red-500`}
+            >
+              Andiracon
+            </p>
+          </div>
+
           <p className="mb-5 text-neutral-600 text-[13px] w-[70%] text-center">
             Web Perusahaan PT. Andiracon Sukses Makmur dapat diakses melalui
             alamat web{" "}
-            <Link href="https://www.andiraconprecast.com/" className="underline">
+            <Link
+              href="https://www.andiraconprecast.com/"
+              className="underline"
+            >
               https://www.andiraconprecast.com/
             </Link>
           </p>

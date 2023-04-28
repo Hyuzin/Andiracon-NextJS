@@ -4,12 +4,12 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import Content from "@/components/Content";
+import { poppins } from "@/components/data/fontData";
 
 export default function About() {
   return (
     <Content
       title="Tentang Kami | Andiracon - Menyediakan Layanan Terbaik untuk Anda"
-      metaTitle="Tentang Andiracon | Perusahaan beton dengan layanan terbaik di indonesia"
       description="Perusahaan kami adalah salah satu produsen beton pracetak terkemuka di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam bidang beton pracetak dan telah melayani berbagai proyek infrastruktur, perumahan, industri, dan pertanian. Kami memiliki fasilitas produksi yang modern dan berkualitas, serta tim profesional yang berkompeten dan berdedikasi."
     >
       <TitleSection title="Tentang kami" />
@@ -24,13 +24,20 @@ export default function About() {
             alt="Logo"
             className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
           /> */}
-          <Image
-            src="https://gist.githubusercontent.com/Hyuzin/ca30b4c6ac4e237dc37abd5026924da5/raw/3b137540767db35bc1dacfba1892c416c665b87d/andiracon-logo-text.svg"
-            alt="Logo"
-            width={500}
-            height={500}
-            className=" md:w-[40vw] lg:w-[30vw] pb-10 pointer-events-none"
-          />
+          <div className="flex flex-row items-center pointer-events-none">
+            <Image
+              src="/assets/logo/andiracon logo ori.png"
+              alt="logo"
+              width={100}
+              height={100}
+              className="w-[7vw] "
+            />
+            <p
+              className={`${poppins.className} hidden md:block font-bold text-7xl text-red-500`}
+            >
+              Andiracon
+            </p>
+          </div>
           <p className="text-justify font-medium text-[18px] lg:text-[22px] ">
             Perusahaan kami adalah salah satu produsen beton pracetak terkemuka
             di Indonesia. Kami memiliki pengalaman lebih dari 20 tahun dalam

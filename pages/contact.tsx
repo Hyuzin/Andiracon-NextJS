@@ -86,7 +86,6 @@ export default function Contact() {
     <ChakraProvider>
       <Content
         title="Kontak Andiracon | Informasi Kontak, Alamat, dan Peta Lokasi"
-        metaTitle="Kontak Kami - Whatsapp | Linkedin | Email"
         description="Hubungi Andiracon Group untuk Mendapatkan Layanan Terbaik"
       >
         <TitleSection title="Kontak" />
@@ -134,16 +133,6 @@ export default function Contact() {
                       <FaWhatsapp className="ml-2" />
                     </ContactButton>
                     <ContactButton
-                      href="https://send-email-xi.vercel.app/"
-                      borderColor="blue.500"
-                      color="blue.500"
-                      hoverBgColor="blue.500"
-                      hoverColor="white"
-                    >
-                      Facebook
-                      <FaFacebook className="ml-2" />
-                    </ContactButton>
-                    <ContactButton
                       href="https://www.linkedin.com/in/imam-wahyudi-owner-andiracon-precast-concrete-134a251a8"
                       borderColor="blue.900"
                       color="blue.900"
@@ -152,16 +141,6 @@ export default function Contact() {
                     >
                       LinkedIn
                       <FaLinkedin className="ml-2" />
-                    </ContactButton>
-                    <ContactButton
-                      href="https://send-email-xi.vercel.app/"
-                      borderColor="purple.500"
-                      color="purple.500"
-                      hoverBgColor="purple.500"
-                      hoverColor="white"
-                    >
-                      Instagram
-                      <FaInstagram className="ml-2" />
                     </ContactButton>
                   </div>
                 </div>

@@ -19,9 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <main className={montserrat.className}>
-      <Head>
-        <link rel="shortcut icon" href="/headicon.ico" />
-      </Head>
       <Component {...pageProps} />
     </main>
   );
