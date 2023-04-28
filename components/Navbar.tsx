@@ -88,7 +88,7 @@ const Navbar = () => {
             className="w-[30px] md:w-[40px] mr-[1px] pointer-events-none "
           /> */}
           <Image
-            src="/assets/logo/andiracon logo ori.png"
+            src="https://iili.io/H8P8Z5x.png"
             alt="logo"
             width={100}
             height={100}

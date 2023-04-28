@@ -27,7 +27,7 @@ const Footer = () => {
           /> */}
           <div className="flex flex-row items-center pointer-events-none">
             <Image
-              src="/assets/logo/andiracon logo ori.png"
+              src="https://iili.io/H8P8Z5x.png"
               alt="logo"
               width={100}
               height={100}
