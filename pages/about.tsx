@@ -30,10 +30,10 @@ export default function About() {
               alt="logo"
               width={100}
               height={100}
-              className="w-[7vw] "
+              className="w-[15vw] md:w-[7vw] "
             />
             <p
-              className={`${poppins.className} hidden md:block font-bold text-7xl text-red-500`}
+              className={`${poppins.className} font-bold text-6xl md:text-7xl text-red-500`}
             >
               Andiracon
             </p>
