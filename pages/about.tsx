@@ -33,7 +33,7 @@ export default function About() {
               className="w-[15vw] md:w-[7vw] "
             />
             <p
-              className={`${poppins.className} font-bold text-6xl md:text-7xl text-red-500`}
+              className={`${poppins.className} font-bold text-5xl md:text-7xl text-red-500`}
             >
               Andiracon
             </p>
