@@ -754,7 +754,7 @@ export default function Product() {
             alt="Sheet Pile Corrugated"
             width={1000}
             height={1000}
-            className="mt-5 w-[60%] mx-auto"
+            className="mt-5 md:w-[60%] mx-auto"
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -1600,7 +1600,7 @@ export default function Product() {
             alt="Sheet Pile Corrugated"
             width={1000}
             height={1000}
-            className="mt-5 w-[60%] mx-auto"
+            className="mt-5 md:w-[60%] mx-auto"
           />
           <TableComponent title="Box Culvert Light Duty">
             <thead className="text-xs">
@@ -1807,7 +1807,7 @@ export default function Product() {
             alt="Sheet Pile Corrugated"
             width={1000}
             height={1000}
-            className="mt-5 w-[50%] mx-auto "
+            className="mt-5 md:w-[50%] mx-auto "
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -1884,7 +1884,7 @@ export default function Product() {
           <TableComponent title="Corrugated Sheet Pile">
             <thead>
               <tr className="bg-gray-300">
-                <th>Type</th>
+                <th className="px-10 md:px-0">Type</th>
                 <th>
                   Height <br /> H <br />
                   (mm)
