@@ -24,6 +24,14 @@ h2 {
   font-size: 60px;
 }
 
+table {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+}
+
 td {
   border-style: solid;
   border-color: gray;
