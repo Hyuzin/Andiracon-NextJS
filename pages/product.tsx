@@ -81,6 +81,97 @@ export default function Product() {
                 </li>
               </Link>
               <Link
+                to="porouswell"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Sumur Resapan (Porous Well)
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="kansteen"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Kansteen
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="barrier"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Barrier (MCB)
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="fence"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                  Pagar Beton (Concrete Fence)
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="tiang"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Tiang Kolom
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="pipabuis"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Pipa Buis
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="pavingblock"
+                smooth={true}
+                spy={true}
+                offset={-100}
+                duration={500}
+              >
+                <li className="group cursor-pointer">
+                  <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Paving Block
+                  </span>
+                </li>
+              </Link>
+              <Link
                 to="sheetpile"
                 smooth={true}
                 spy={true}
@@ -751,7 +842,7 @@ export default function Product() {
           </TableComponent>
           <Image
             src="/assets/images/uditch-spec.png"
-            alt="Sheet Pile Corrugated"
+            alt="U Ditch"
             width={1000}
             height={1000}
             className="mt-5 md:w-[60%] mx-auto"
@@ -992,7 +1083,7 @@ export default function Product() {
           </TableComponent>
           <Image
             src="/assets/images/rcp.png"
-            alt="Sheet Pile Corrugated"
+            alt="reinforced concrete pipes"
             width={1000}
             height={1000}
             className="mt-5"
@@ -1361,7 +1452,7 @@ export default function Product() {
           </TableComponent>
           <Image
             src="/assets/images/cover-uditch-spec.png"
-            alt="Sheet Pile Corrugated"
+            alt="cover uditch"
             width={1000}
             height={1000}
             className="mt-5"
@@ -1597,7 +1688,7 @@ export default function Product() {
           </TableComponent>
           <Image
             src="/assets/images/boxculvert-heavyduty.png"
-            alt="Sheet Pile Corrugated"
+            alt="boxculvert heavy duty"
             width={1000}
             height={1000}
             className="mt-5 md:w-[60%] mx-auto"
@@ -1804,7 +1895,7 @@ export default function Product() {
           </TableComponent>
           <Image
             src="/assets/images/boxculvert-lightduty.png"
-            alt="Sheet Pile Corrugated"
+            alt="boxculvert light duty"
             width={1000}
             height={1000}
             className="mt-5 md:w-[50%] mx-auto "
@@ -1836,6 +1927,975 @@ export default function Product() {
               </li>
             </ul>
           </div>
+        </ProductSection>
+        <ProductSection
+          title="Sumur Resapan ( Porous Well )"
+          imageName="porous-well.jpg"
+          hashUrl="porouswell"
+          height="h-[50vw] lg:h-[30vw]"
+        >
+          <span className="font-medium"> Sumur Resapan</span>, juga dikenal
+          sebagai <span className="font-medium"> Porous Well</span>, adalah
+          salah satu jenis sistem pengolahan air hujan atau sistem drainase yang
+          dirancang untuk mengumpulkan dan menyimpan air hujan di tempat-tempat
+          yang memungkinkan air tersebut meresap ke dalam tanah.
+          <br />
+          <br /> Sumur resapan terdiri dari sumur atau lubang yang diisi dengan
+          batu atau material berpori yang memungkinkan air hujan untuk meresap
+          ke dalam tanah di sekitarnya. <br />
+          <br />
+          Sumur resapan biasanya digunakan untuk mengurangi volume air hujan
+          yang masuk ke saluran pembuangan permukaan, seperti selokan dan
+          sungai, yang dapat menyebabkan banjir dan erosi tanah. Selain itu,
+          sumur resapan juga dapat membantu meningkatkan kualitas air tanah
+          dengan mengurangi aliran permukaan dan mengurangi risiko pencemaran
+          air.
+          <br />
+          <br /> Sumur resapan biasanya dibangun di area yang memiliki curah
+          hujan tinggi dan tanah yang mudah meresap air. Namun, penggunaan sumur
+          resapan harus diperhatikan dengan baik untuk memastikan bahwa mereka
+          tidak mengganggu struktur bangunan atau lingkungan sekitarnya, dan
+          harus dirancang dan dibangun dengan benar untuk menghindari kebocoran
+          atau kerusakan yang dapat merusak lingkungan.
+          <TableComponent title="Sumur Resapan ( Porous Well ) ">
+            <thead>
+              <tr className="bg-gray-300">
+                <th rowSpan={2} className="px-5">
+                  NO
+                </th>
+                <th rowSpan={2} className="px-5">
+                  KOMPONEN
+                </th>
+                <th>TEBAL</th>
+                <th>DIAMETER DALAM</th>
+                <th>DIAMETER LUAR</th>
+                <th>TINGGI</th>
+                <th>TINGGI EFEKTIF</th>
+                <th>PERKIRAAN BERAT</th>
+              </tr>
+              <tr className="bg-orange-100">
+                <th>
+                  T <br />
+                  mm
+                </th>
+                <th>
+                  OD <br />
+                  mm
+                </th>
+                <th>
+                  ID <br />
+                  mm
+                </th>
+                <th>
+                  H <br />
+                  mm
+                </th>
+                <th>
+                  H (Effective)
+                  <br /> mm
+                </th>
+                <th>
+                  Approx Weight <br />
+                  (Kg)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Well Cover No 1 (Type HD )</td>
+                <td></td>
+                <td>405</td>
+                <td>324</td>
+                <td>126</td>
+                <td></td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Well Cover No 2 (Type HD )</td>
+                <td>168</td>
+                <td>1185</td>
+                <td>314</td>
+                <td>226</td>
+                <td></td>
+                <td>207</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Digest Well Porous 0 1000</td>
+                <td>100</td>
+                <td>1194</td>
+                <td>1014</td>
+                <td></td>
+                <td>1000</td>
+                <td>864</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Well Cover No 1</td>
+                <td></td>
+                <td>260</td>
+                <td>200</td>
+                <td>80</td>
+                <td></td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Well Cover No 2</td>
+                <td>100</td>
+                <td>770</td>
+                <td>260</td>
+                <td>100</td>
+                <td></td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Digest Well Porous 0 600</td>
+                <td>80</td>
+                <td>760</td>
+                <td>600</td>
+                <td></td>
+                <td>1000</td>
+                <td>428</td>
+              </tr>
+            </tbody>
+          </TableComponent>
+          <Image
+            src="/assets/images/porous-well-spec.png"
+            alt="porous well"
+            width={1000}
+            height={1000}
+            className="mt-5 md:w-[60%] mx-auto"
+          />
+          <div className="font-normal">
+            <p className="text-center py-10 font-semibold">
+              Spesifikasi Produk
+            </p>
+            <dt>Mutu Beton : </dt>
+            <dd>K-350</dd>
+            <dt>Metode Produksi : </dt>
+            <dd>Cetak basah dengan getaran frekuensi tinggi</dd>
+            <dt>Baja Tulangan : </dt>
+            <ul className="list-disc list-inside text-[15px] text-red-500">
+              <li>
+                <span className="text-black">
+                  U-50 Hard Drawn Deformed Wire{"(HDDW)"}
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Leleh = 4500 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Tarik = 5000 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </ProductSection>
+        <ProductSection
+          title="Kansteen"
+          hashUrl="kansteen"
+          imageName="kansteen.png"
+        >
+          <span className="font-medium"> Kansteen </span>adalah elemen
+          konstruksi yang digunakan untuk membatasi jalan, trotoar, median, atau
+          area lain yang memerlukan pembatasan.
+          <br />
+          <br />
+          Kansteen biasanya berbentuk persegi panjang dengan ukuran bervariasi
+          sesuai dengan kebutuhan dan standar. Kansteen beton memiliki
+          keunggulan seperti kuat, tahan lama, mudah dipasang, dan murah.
+          Kansteen beton juga dapat diwarnai atau dicetak untuk meningkatkan
+          estetika lingkungan.
+          <TableComponent title="Kansteen">
+            <thead>
+              <tr className="bg-gray-300">
+                <th rowSpan={2}>NO</th>
+                <th>KODE PRODUK</th>
+                <th rowSpan={2}>TYPE</th>
+                <th colSpan={3}>DIMENSI PRODUK</th>
+                <th>PERKIRAAN BERAT</th>
+              </tr>
+              <tr className="bg-orange-100">
+                <th>Product Code</th>
+                <th>
+                  Length <br /> mm
+                </th>
+                <th>
+                  Width <br /> mm
+                </th>
+                <th>
+                  Height <br /> mm
+                </th>
+                <th>
+                  Approx <br /> Weigth <br /> Kg
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="py-5">1</td>
+                <td>KAP16X20X40</td>
+                <td>Type 1</td>
+                <td>400</td>
+                <td>160</td>
+                <td>200</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <td className="py-5">2</td>
+                <td>KAP16X26X60</td>
+                <td>Type 2</td>
+                <td>600</td>
+                <td>160</td>
+                <td>260</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <td className="py-5">3</td>
+                <td>KAP15X30X60</td>
+                <td>Type 3</td>
+                <td>600</td>
+                <td>150</td>
+                <td>300</td>
+                <td>63</td>
+              </tr>
+              <tr>
+                <td className="py-5">4</td>
+                <td>KAP20X30X60</td>
+                <td>Type 4</td>
+                <td>600</td>
+                <td>200</td>
+                <td>300</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td className="py-5">5</td>
+                <td>KAP21X30X60</td>
+                <td>Type 5</td>
+                <td>600</td>
+                <td>210</td>
+                <td>300</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td className="py-5">6</td>
+                <td>KAP22X25X60</td>
+                <td>Type 6</td>
+                <td>600</td>
+                <td>220</td>
+                <td>250</td>
+                <td>83</td>
+              </tr>
+              <tr>
+                <td className="py-5">7</td>
+                <td>KAP25X30X60</td>
+                <td>Type 7</td>
+                <td>600</td>
+                <td>250</td>
+                <td>300</td>
+                <td>103</td>
+              </tr>
+            </tbody>
+          </TableComponent>
+          <Image
+            src="/assets/images/kansteen-spec.png"
+            alt="kansteen"
+            width={1000}
+            height={1000}
+            className="mt-5 md:w-[90%] mx-auto"
+          />
+          <div className="font-normal">
+            <p className="text-center py-10 font-semibold">
+              Spesifikasi Produk
+            </p>
+            <dt>Mutu Beton : </dt>
+            <dd>K-300</dd>
+            <dt>Metode Produksi : </dt>
+            <dd>Cetak basah dengan getaran frekuensi tinggi</dd>
+            <dt>Baja Tulangan : </dt>
+            <ul className="list-disc list-inside text-[15px] text-red-500">
+              <li>
+                <span className="text-black">
+                  U-50 Hard Drawn Deformed Wire{"(HDDW)"}
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Leleh = 4500 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Tarik = 5000 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </ProductSection>
+        <ProductSection
+          title="Barrier ( MCB )"
+          hashUrl="barrier"
+          imageName="mcb.jpg"
+        >
+          <span className="font-medium"> Median Concrete Barrier</span> adalah
+          sebuah struktur pembatas yang terbuat dari beton dan dipasang di
+          tengah jalan raya untuk mencegah kendaraan melintas ke jalur yang
+          berlawanan arah.
+          <br />
+          <br /> Median concrete barrier memiliki beberapa keuntungan, seperti
+          meningkatkan keselamatan pengendara, mengurangi risiko tabrakan
+          frontal, dan mempertahankan kapasitas jalan.
+          <br />
+          <br /> Median concrete barrier juga memiliki beberapa kelemahan,
+          seperti meningkatkan biaya pembangunan dan pemeliharaan, membatasi
+          akses darurat dan pejalan kaki, dan menimbulkan dampak visual dan
+          lingkungan.
+          <TableComponent title="Barrier ( MCB )">
+            <thead>
+              <tr className="bg-gray-300">
+                <th rowSpan={2}>NO</th>
+                <th>KODE PRODUK</th>
+                <th rowSpan={2}>TYPE</th>
+                <th colSpan={3}>DIMENSI PRODUK</th>
+                <th>PERKIRAAN BERAT</th>
+              </tr>
+              <tr className="bg-orange-100">
+                <th>Product Code</th>
+                <th>
+                  Length <br /> mm
+                </th>
+                <th>
+                  Width <br /> mm
+                </th>
+                <th>
+                  Height <br /> mm
+                </th>
+                <th>
+                  Approx <br /> Weigth <br /> Kg
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="py-5">1</td>
+                <td>BAR40X60</td>
+                <td>Type 1</td>
+                <td>1000</td>
+                <td>400</td>
+                <td>600</td>
+                <td>280</td>
+              </tr>
+              <tr>
+                <td className="py-5">2</td>
+                <td>BAR50X80</td>
+                <td>Type 2</td>
+                <td>1000</td>
+                <td>500</td>
+                <td>800</td>
+                <td>610</td>
+              </tr>
+              <tr>
+                <td className="py-5">3</td>
+                <td>BAR60X80</td>
+                <td>Type 3</td>
+                <td>1000</td>
+                <td>600</td>
+                <td>800</td>
+                <td>620</td>
+              </tr>
+              <tr>
+                <td className="py-5">4</td>
+                <td>BAR60X100</td>
+                <td>Type 3</td>
+                <td>1000</td>
+                <td>600</td>
+                <td>1000</td>
+                <td>746</td>
+              </tr>
+            </tbody>
+          </TableComponent>
+          <Image
+            src="/assets/images/mcb-spec.png"
+            alt="mcb"
+            width={1000}
+            height={1000}
+            className="mt-5 md:w-[70%] mx-auto"
+          />
+          <div className="font-normal">
+            <p className="text-center py-10 font-semibold">
+              Spesifikasi Produk
+            </p>
+            <dt>Mutu Beton : </dt>
+            <dd>K-350</dd>
+            <dt>Metode Produksi : </dt>
+            <dd>Cetak basah dengan getaran frekuensi tinggi</dd>
+            <dt>Baja Tulangan : </dt>
+            <ul className="list-disc list-inside text-[15px] text-red-500">
+              <li>
+                <span className="text-black">
+                  U-50 Hard Drawn Deformed Wire{"(HDDW)"}
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Leleh = 4500 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Tarik = 5000 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </ProductSection>
+        <ProductSection
+          title="Pagar Beton ( CONCRETE FENCE )"
+          hashUrl="fence"
+          imageName="pagarbeton.jpg"
+        >
+          <span className="font-medium"> Pagar beton</span> adalah jenis pagar
+          yang terbuat dari beton, yaitu campuran semen, pasir, kerikil, dan
+          air. Pagar beton memiliki keunggulan seperti kuat, tahan lama, tahan
+          api, dan mudah dipasang.
+          <br />
+          <br /> Pagar beton juga dapat dibentuk sesuai dengan keinginan dan
+          kebutuhan pengguna, misalnya dengan motif, warna, atau ukuran
+          tertentu. Pagar beton cocok digunakan untuk melindungi area perumahan,
+          industri, pertanian, atau fasilitas umum lainnya.
+          <TableComponent title="Pagar Beton ( CONCRETE FENCE )">
+            <thead>
+              <tr className="bg-gray-300">
+                <th rowSpan={2}>NO</th>
+                <th>KODE PRODUK</th>
+                <th rowSpan={2}>TYPE</th>
+                <th colSpan={3}>DIMENSI PRODUk</th>
+                <th>PERKIRAAN BERAT</th>
+              </tr>
+              <tr className="bg-orange-100">
+                <th>Product Code</th>
+                <th>H mm</th>
+                <th>L mm</th>
+                <th>T mm</th>
+                <th>
+                  Approx Weight <br />
+                  Kg
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="py-5">1</td>
+                <td>PAN240405</td>
+                <td>2400X400X50</td>
+                <td>400</td>
+                <td>2400</td>
+                <td>50</td>
+                <td>121</td>
+              </tr>
+              <tr>
+                <td className="py-5">2</td>
+                <td>PAN240408</td>
+                <td>2400X400X80</td>
+                <td>400</td>
+                <td>2400</td>
+                <td>80</td>
+                <td>194</td>
+              </tr>
+            </tbody>
+          </TableComponent>
+          <Image
+            src="/assets/images/pagarbeton-spec.png"
+            alt="kansteen"
+            width={1000}
+            height={1000}
+            className="mt-5 md:w-[70%] mx-auto"
+          />
+          <div className="font-normal">
+            <p className="text-center py-10 font-semibold">
+              Spesifikasi Produk
+            </p>
+            <dt>Mutu Beton : </dt>
+            <dd>K-350</dd>
+            <dt>Metode Produksi : </dt>
+            <dd>Cetak basah dengan getaran frekuensi tinggi</dd>
+            <dt>Baja Tulangan : </dt>
+            <ul className="list-disc list-inside text-[15px] text-red-500">
+              <li>
+                <span className="text-black">
+                  U-50 Hard Drawn Deformed Wire{"(HDDW)"}
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Leleh = 4500 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Tarik = 5000 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </ProductSection>
+        <ProductSection
+          title="Tiang Kolom"
+          hashUrl="tiang"
+          imageName="tiangkolom.jpg"
+        >
+          <span className="font-medium"> Tiang kolom</span> dalam beton adalah
+          struktur penyangga yang terbuat dari beton bertulang besi yang
+          berfungsi untuk menopang beban lantai dan atap di atasnya. <br />
+          <br />
+          Tiang kolom dalam beton harus dirancang dengan baik agar dapat menahan
+          gaya tekan dan lentur yang timbul akibat beban mati dan beban hidup.
+          Tiang kolom dalam beton juga harus memenuhi persyaratan keamanan,
+          kekuatan, dan keindahan bangunan.
+          <TableComponent title="Tiang Kolom">
+            <thead>
+              <tr className="bg-gray-300">
+                <th rowSpan={2}>NO</th>
+                <th>KODE PRODUK</th>
+                <th rowSpan={2}>TYPE</th>
+                <th colSpan={7}>DIMENSI PRODUK</th>
+                <th>PERKIRAAN BERAT</th>
+              </tr>
+              <tr className="bg-orange-100">
+                <th>Product Code</th>
+                <th>
+                  H <br />
+                  mm
+                </th>
+                <th>
+                  H{"'"} <br />
+                  mm
+                </th>
+                <th>
+                  W1 <br />
+                  mm
+                </th>
+                <th>
+                  W2 <br />
+                  mm
+                </th>
+                <th>
+                  m <br />
+                  mm
+                </th>
+                <th>
+                  W4 <br />
+                  mm
+                </th>
+                <th>
+                  C <br />
+                  mm
+                </th>
+                <th>
+                  Approx Weight <br />
+                  Kg
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>CL 2700X200X160</td>
+                <td rowSpan={3}>T K 200X160</td>
+                <td>2400</td>
+                <td>400</td>
+                <td>200</td>
+                <td>160</td>
+                <td>55</td>
+                <td>50</td>
+                <td>15</td>
+                <td>182</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>CL 3200X200X160</td>
+                <td>3200</td>
+                <td>400</td>
+                <td>200</td>
+                <td>160</td>
+                <td>55</td>
+                <td>50</td>
+                <td>15</td>
+                <td>216</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>CL 4000X200X160</td>
+                <td>4000</td>
+                <td>400</td>
+                <td>200</td>
+                <td>160</td>
+                <td>55</td>
+                <td>50</td>
+                <td>15</td>
+                <td>270</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>CL 2700X180X160</td>
+                <td rowSpan={3}>T K 180X160</td>
+                <td>2400</td>
+                <td>400</td>
+                <td>180</td>
+                <td>160</td>
+                <td>55</td>
+                <td>50</td>
+                <td>15</td>
+                <td>161</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>CL 3200X180X160</td>
+                <td>3200</td>
+                <td>400</td>
+                <td>180</td>
+                <td>160</td>
+                <td>55</td>
+                <td>50</td>
+                <td>15</td>
+                <td>191</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>CL 4000X180X160</td>
+                <td>4000</td>
+                <td>400</td>
+                <td>180</td>
+                <td>160</td>
+                <td>55</td>
+                <td>50</td>
+                <td>15</td>
+                <td>238</td>
+              </tr>
+            </tbody>
+          </TableComponent>
+          <Image
+            src="/assets/images/tiangkolom-spec.png"
+            alt="tiang kolom"
+            width={1000}
+            height={1000}
+            className="mt-5 md:w-[70%] mx-auto"
+          />
+          <div className="font-normal">
+            <p className="text-center py-10 font-semibold">
+              Spesifikasi Produk
+            </p>
+            <dt>Mutu Beton : </dt>
+            <dd>K-350</dd>
+            <dt>Metode Produksi : </dt>
+            <dd>Cetak basah dengan getaran frekuensi tinggi</dd>
+            <dt>Baja Tulangan : </dt>
+            <ul className="list-disc list-inside text-[15px] text-red-500">
+              <li>
+                <span className="text-black">
+                  U-50 Hard Drawn Deformed Wire{"(HDDW)"}
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Leleh = 4500 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+              <li>
+                <span className="text-black">
+                  Tegangan Tarik = 5000 Kg/Cm<sup>2</sup>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </ProductSection>
+        <ProductSection
+          title="Pipa Buis"
+          hashUrl="pipabuis"
+          imageName="pipabuis.jpg"
+        >
+          <span className="font-medium">Pipa Buis </span>adalah jenis pipa yang
+          terbuat dari beton bertulang atau beton pracetak yang berbentuk
+          silinder. Pipa buis biasanya digunakan untuk saluran air, irigasi,
+          drainase, atau pembuangan limbah.
+          <br />
+          <br /> Pipa buis memiliki keunggulan seperti kuat, tahan lama, mudah
+          dipasang, dan murah. Pipa buis juga dapat disesuaikan dengan ukuran
+          dan bentuk yang diinginkan sesuai dengan kebutuhan proyek.
+          <TableComponent title="Pipa Buis Full">
+            <thead>
+              <tr className="bg-gray-300">
+                <th rowSpan={2}>NO</th>
+                <th rowSpan={2}>Type Produk</th>
+                <th colSpan={3}>Dimensi</th>
+                <th rowSpan={2}>
+                  BerBt <br />
+                  Pr^^u^ <br />
+                  (Kg)
+                </th>
+              </tr>
+              <tr className="bg-orange-100">
+                <th>
+                  Diamater D <br /> (mm)
+                </th>
+                <th>Tebal T (mm)</th>
+                <th>Panjang L (mm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Buis 200</td>
+                <td>200</td>
+                <td>35</td>
+                <td>1000</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Buis 300</td>
+                <td>300</td>
+                <td>40</td>
+                <td>1000</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Buis 400</td>
+                <td>400</td>
+                <td>50</td>
+                <td>1000</td>
+                <td>175</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Buis 500</td>
+                <td>500</td>
+                <td>55</td>
+                <td>1000</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Buis 600</td>
+                <td>600</td>
+                <td>60</td>
+                <td>1000</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Buis 800</td>
+                <td>800</td>
+                <td>80</td>
+                <td>1000</td>
+                <td>550</td>
+              </tr>
+            </tbody>
+          </TableComponent>
+          <TableComponent title="Pipa Buis Half">
+            <thead>
+              <tr className="bg-gray-300">
+                <th rowSpan={2}>NO</th>
+                <th rowSpan={2}>Type Produk</th>
+                <th colSpan={3}>Dimensi</th>
+                <th rowSpan={2}>
+                  Berat <br />
+                  Pit^dud- <br />
+                  (Kg)
+                </th>
+              </tr>
+              <tr className="bg-orange-100">
+                <th>
+                  Diamater D <br /> (mm)
+                </th>
+                <th>Tebal T (mm)</th>
+                <th>Panjang L (mm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Buis 200</td>
+                <td>200</td>
+                <td>35</td>
+                <td>1000</td>
+                <td>37,5</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Buis 300</td>
+                <td>300</td>
+                <td>40</td>
+                <td>1000</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Buis 400</td>
+                <td>400</td>
+                <td>50</td>
+                <td>1000</td>
+                <td>87,5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Buis 500</td>
+                <td>500</td>
+                <td>55</td>
+                <td>1000</td>
+                <td>125</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Buis 600</td>
+                <td>600</td>
+                <td>60</td>
+                <td>1000</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Buis 800</td>
+                <td>800</td>
+                <td>80</td>
+                <td>1000</td>
+                <td>275</td>
+              </tr>
+            </tbody>
+          </TableComponent>
+          <Image
+            src="/assets/images/pipabuis-spec.png"
+            alt="pipa buis"
+            width={1000}
+            height={1000}
+            className="mt-5 md:w-[70%] mx-auto"
+          />
+          <div className="font-normal">
+            <p className="text-center py-10 font-semibold">
+              Spesifikasi Produk
+            </p>
+            <dt>Mutu Beton : </dt>
+            <dd>K-225</dd>
+            <dt>Metode Produksi : </dt>
+            <dd>Semi Dry Cast</dd>
+          </div>
+        </ProductSection>
+        <ProductSection
+          title="Paving Block"
+          hashUrl="pavingblock"
+          imageName="pavingblock.jpg"
+        >
+          <span className="font-medium">Paving block </span>adalah salah satu
+          jenis bahan bangunan yang digunakan untuk menutup permukaan tanah
+          dengan cara menyusun blok-blok beton berbentuk persegi atau segi
+          lainnya. <br />
+          <br />
+          Paving block memiliki beberapa keunggulan, seperti tahan lama, mudah
+          dipasang dan dilepas, dapat menyerap air hujan, dan memberikan
+          estetika yang menarik. Paving block biasanya digunakan untuk membuat
+          trotoar, jalan masuk, taman, halaman, dan tempat parkir.
+          <TableComponent title="Paving Block">
+            <thead>
+              <tr className="bg-gray-300">
+                <th className="py-5">NO</th>
+                <th>TYPE</th>
+                <th>UKURAN</th>
+                <th>ISI PER M2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>HEXAGON</td>
+                <td>
+                  20x20x6
+                  <br />
+                  20x20x8
+                </td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>UBIN SET</td>
+                <td>
+                  21x21x6
+                  <br />
+                  21x21x8
+                </td>
+                <td>
+                  22
+                  <br />
+                  5,5
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>TRIHEX</td>
+                <td>
+                  19,7x9,6x6
+                  <br />
+                  19,7x9,6x8
+                </td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>UBIN KECIL</td>
+                <td>
+                  10,5x10,5x6
+                  <br />
+                  10,5x10,5x8
+                </td>
+                <td>88</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>UBIN BESAR</td>
+                <td>
+                  21x21x6
+                  <br />
+                  21x21x8
+                </td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  GRASSBLOCK <br /> LB 8
+                </td>
+                <td>
+                  TEBAL 6<br />
+                  TEBAL 8
+                </td>
+                <td>7,5</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>
+                  GRASSBLOCK <br /> LB 5
+                </td>
+                <td>TEBAL 8</td>
+                <td>6,25</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>TOPI USKUP</td>
+                <td>
+                  TEBAL 6<br />
+                  TEBAL 8
+                </td>
+                <td>6,25</td>
+              </tr>
+            </tbody>
+          </TableComponent>
         </ProductSection>
         <ProductSection
           title="Sheet Pile"

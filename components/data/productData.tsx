@@ -12,13 +12,22 @@ export const productData = [
     id: 2,
     image: "reinforcoed-concrete-pipe",
     title: "RCP",
-    hash: 'rcp',
+    hash: "rcp",
     description:
       "Reinforced Concrete Pipe (RCP) adalah pipa yang terbuat dari beton bertulang yang diperkuat dengan baja di dalamnya.",
-    classFalse: 'translate-y-[60%]'
+    classFalse: "translate-y-[60%]",
   },
   {
     id: 3,
+    image: "cover-uditch",
+    title: "Cover U Ditch",
+    hash: "cover",
+    description:
+      "Cover U Ditch adalah produk beton pracetak yang digunakan untuk menutup saluran u ditch.",
+    classFalse: "translate-y-[57%]",
+  },
+  {
+    id: 4,
     image: "box-culvert",
     title: "Box Culvert",
     hash: "box",
@@ -27,13 +36,67 @@ export const productData = [
     classFalse: "translate-y-[57%]",
   },
   {
-    id: 4,
-    image: "cover-uditch",
-    title: "Cover U Ditch",
-    hash: "cover",
+    id: 5,
+    image: "porous-well",
+    title: "Sumur Resapan",
+    hash: "porouswell",
     description:
-      "Cover U Ditch adalah produk beton pracetak yang digunakan untuk menutup saluran u ditch.",
+      "Sumur Resapan adalah salah satu jenis sumur yang berfungsi untuk menampung air hujan dan mengalirkannya ke dalam tanah.",
+    classFalse: "translate-y-[61%]",
+  },
+  {
+    id: 6,
+    image: "kansteen",
+    title: "Kansteen",
+    hash: "Kansteen",
+    description:
+      "Kansteen adalah elemen konstruksi yang digunakan untuk membatasi jalan, trotoar, median, atau area lain yang memerlukan pembatasan.",
+    classFalse: "translate-y-[65%]",
+  },
+  {
+    id: 7,
+    image: "mcb",
+    title: "Barrier (MCB)",
+    hash: "barrier",
+    description:
+      "Barrier (MCB) adalah sebuah struktur pembatas yang terbuat dari beton dan dipasang di tengah jalan raya untuk mencegah kendaraan melintas ke jalur yang berlawanan arah",
+    classFalse: "translate-y-[68%]",
+  },
+  {
+    id: 8,
+    image: "pagarbeton",
+    title: "Pagar Beton",
+    hash: "fence",
+    description:
+      "Pagar Beton adalah jenis pagar yang terbuat dari beton, yaitu campuran semen, pasir, kerikil, dan air.",
     classFalse: "translate-y-[57%]",
+  },
+  {
+    id: 9,
+    image: "tiangkolom",
+    title: "Tiang Kolom",
+    hash: "tiang",
+    description:
+      "Tiang kolom dalam beton adalah struktur penyangga yang terbuat dari beton bertulang besi yang berfungsi untuk menopang beban lantai dan atap di atasnya. ",
+    classFalse: "translate-y-[64%]",
+  },
+  {
+    id: 10,
+    image: "pipabuis",
+    title: "Pipa Buis",
+    hash: "pipabuis",
+    description:
+      "Pipa Buis adalah jenis pipa yang terbuat dari beton bertulang atau beton pracetak yang berbentuk silinder. ",
+    classFalse: "translate-y-[60%]",
+  },
+  {
+    id: 11,
+    image: "pavingblock",
+    title: "Paving Block",
+    hash: "pavingblock",
+    description:
+      "Paving block adalah salah satu jenis bahan bangunan yang digunakan untuk menutup permukaan tanah dengan cara menyusun blok-blok beton berbentuk persegi atau segi lainnya ",
+    classFalse: "translate-y-[67%]",
   },
   {
     id: 5,

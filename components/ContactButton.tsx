@@ -27,7 +27,7 @@ const ContactButton: React.FC<contactProps> = ({
     setState((current) => !current);
     setTimeout(() => {
       setState((current) => current);
-    }, 500);
+    }, 1000);
   }, []);
   
   return (
@@ -37,6 +37,8 @@ const ContactButton: React.FC<contactProps> = ({
         borderColor={borderColor}
         color={color}
         _hover={{ bgColor: hoverBgColor, color: hoverColor }}
+        _focus={{ bgColor: hoverBgColor, color: hoverColor }}
+        _active={{ bgColor: hoverBgColor, color: hoverColor }}
         isLoading={state}
         onClick={buttonClick}
       >

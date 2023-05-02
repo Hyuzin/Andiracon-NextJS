@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 type ProductSectionProps = {
-  imageName: String;
+  imageName?: String;
   title: String;
   hashUrl: String;
   height?: String;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const ProductSection = ({
@@ -23,8 +23,8 @@ const ProductSection = ({
       <div className={`overflow-hidden  ${height} `}>
         <Image
           src={`/assets/images/${imageName}`}
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           alt={`${title}`}
           className=" w-full object-cover h-full"
         />
