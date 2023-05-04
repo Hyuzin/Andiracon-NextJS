@@ -106,9 +106,9 @@ export default function Contact() {
               </div>
               <div className="pl-5 pb-5">
                 <div className="py-5 pt-10 md:pt-5">
-                  <span className="font-semibold"> Alamat : </span> <br /> Ruko
-                  Botania, Jl.Raya Narogong, Jl. Pesona Metropolitan Jl. Pratama
-                  3 No.24, Kota Bks, Jawa Barat 17115
+                  <span className="font-semibold"> Alamat : </span> <br /> Jl.
+                  Baru Underpass Ruko Puri Sentosa Blok A No.1 Bekasi
+                  Timur - Kota Bekasi
                 </div>
                 <div className="pb-5 tracking-widest">
                   <span className="font-semibold"> No : </span> <br />
