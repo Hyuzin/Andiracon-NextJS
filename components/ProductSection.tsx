@@ -27,6 +27,8 @@ const ProductSection = ({
           height={1000}
           alt={`${title}`}
           className=" w-full object-cover h-full"
+          loading="eager"
+          priority={true}
         />
       </div>
     </div>

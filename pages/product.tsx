@@ -128,7 +128,7 @@ export default function Product() {
               >
                 <li className="group cursor-pointer">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                  Pagar Beton (Concrete Fence)
+                    Pagar Beton (Concrete Fence)
                   </span>
                 </li>
               </Link>
@@ -846,6 +846,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[60%] mx-auto"
+            loading="eager"
+            priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -1087,6 +1089,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5"
+            loading="eager"
+            priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -1456,6 +1460,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5"
+            loading="eager"
+            priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -1692,6 +1698,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[60%] mx-auto"
+            loading="eager"
+            priority={true}
           />
           <TableComponent title="Box Culvert Light Duty">
             <thead className="text-xs">
@@ -1899,6 +1907,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[50%] mx-auto "
+            loading="eager"
+            priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -2069,6 +2079,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[60%] mx-auto"
+            loading="eager"
+            priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -2210,6 +2222,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[90%] mx-auto"
+            loading="eager"
+            priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -2327,6 +2341,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[70%] mx-auto"
+            loading="eager"
+            priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -2417,6 +2433,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[70%] mx-auto"
+            loading="eager"
+          priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -2587,6 +2605,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[70%] mx-auto"
+            loading="eager"
+          priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -2777,6 +2797,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5 md:w-[70%] mx-auto"
+            loading="eager"
+          priority={true}
           />
           <div className="font-normal">
             <p className="text-center py-10 font-semibold">
@@ -3114,6 +3136,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5"
+            loading="eager"
+          priority={true}
           />
           <TableComponent title="Flat Sheet Pile">
             <thead>
@@ -3308,6 +3332,8 @@ export default function Product() {
             width={1000}
             height={1000}
             className="mt-5"
+            loading="eager"
+          priority={true}
           />
         </ProductSection>
         <ProductSection
@@ -3421,6 +3447,8 @@ export default function Product() {
             alt="square pile table"
             width={1000}
             height={1000}
+            loading="eager"
+          priority={true}
           />
         </ProductSection>
       </motion.div>

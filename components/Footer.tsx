@@ -31,7 +31,7 @@ const Footer = () => {
               alt="logo"
               width={100}
               height={100}
-              className="w-[10vw] md:w-[3vw] "
+              className="w-[10vw] md:w-[3vw]"
             />
             <p
               className={`${poppins.className} font-bold text-2xl text-red-500`}
