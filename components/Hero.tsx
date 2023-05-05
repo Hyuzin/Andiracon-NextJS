@@ -2,8 +2,12 @@ import { poppins } from "@/components/data/fontData";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import useNextBlurHash from 'use-next-blurhash'
 
 const Hero = ({ className }: { className: string }) => {
+
+  const [blurDataUrl] = useNextBlurHash('LAHBSd~qsR%#0:E2OrsCtm9Fm,tR')
+
   return (
     <div className={` ${className} relative h-screen`} id="Home">
       <motion.div
@@ -16,7 +20,8 @@ const Hero = ({ className }: { className: string }) => {
           height={2000}
           alt="Hero"
           className="w-full object-cover h-screen brightness-75 pointer-events-none"
-          loading="eager"
+          placeholder="blur"
+          blurDataURL={blurDataUrl}
           priority={true}
           quality={100}
         />
