@@ -45,6 +45,7 @@ export default function Home() {
       title={item.title}
       description={item.description}
       classFalse={item.classFalse}
+      blurDataUrl={item.blurDataUrl}
     />
   ));
 

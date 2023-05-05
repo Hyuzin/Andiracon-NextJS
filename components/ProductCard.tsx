@@ -10,6 +10,7 @@ interface productCardProps {
   title: String;
   description: String;
   classFalse: String;
+  blurDataUrl: string;
 }
 
 const ProductCard: React.FC<productCardProps> = ({
@@ -18,6 +19,7 @@ const ProductCard: React.FC<productCardProps> = ({
   title,
   description,
   classFalse,
+  blurDataUrl
 }) => {
   const [clicked, setClicked] = useState(false);
 
@@ -56,8 +58,9 @@ const ProductCard: React.FC<productCardProps> = ({
           className={`${
             clicked ? "rotate-3 scale-125 blur-[2px]" : ""
           } h-full w-full object-cover transition-transform duration-500 rounded-lg group-hover:rotate-3 group-hover:scale-125 group-hover:blur-[2px] pointer-events-none `}
-          loading="eager"
-          priority={true}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={blurDataUrl}
         />
       </div>
       <div
