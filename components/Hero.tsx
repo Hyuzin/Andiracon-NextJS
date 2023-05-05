@@ -21,8 +21,8 @@ const Hero = ({ className }: { className: string }) => {
           alt="Hero"
           className="w-full object-cover h-screen brightness-75 pointer-events-none"
           placeholder="blur"
+          loading="lazy"
           blurDataURL={blurDataUrl}
-          priority={true}
           quality={100}
         />
       </motion.div>
