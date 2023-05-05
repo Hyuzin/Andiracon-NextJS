@@ -7,7 +7,6 @@ export const productData = [
     description:
       "Beton U Ditch adalah salah satu produk beton pra cetak yang berbentuk huruf Udan digunakan untuk saluran air.",
     classFalse: "translate-y-[57%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 2,
@@ -17,7 +16,6 @@ export const productData = [
     description:
       "Reinforced Concrete Pipe (RCP) adalah pipa yang terbuat dari beton bertulang yang diperkuat dengan baja di dalamnya.",
     classFalse: "translate-y-[60%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 3,
@@ -27,7 +25,6 @@ export const productData = [
     description:
       "Cover U Ditch adalah produk beton pracetak yang digunakan untuk menutup saluran u ditch.",
     classFalse: "translate-y-[57%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 4,
@@ -37,7 +34,6 @@ export const productData = [
     description:
       "Box Culvert adalah salah satu jenis saluran air yang terbuat dari beton bertulang dan berbentuk persegi panjang. ",
     classFalse: "translate-y-[57%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 5,
@@ -47,7 +43,6 @@ export const productData = [
     description:
       "Sumur Resapan adalah salah satu jenis sumur yang berfungsi untuk menampung air hujan dan mengalirkannya ke dalam tanah.",
     classFalse: "translate-y-[61%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 6,
@@ -57,7 +52,6 @@ export const productData = [
     description:
       "Kansteen adalah elemen konstruksi yang digunakan untuk membatasi jalan, trotoar, median, atau area lain yang memerlukan pembatasan.",
     classFalse: "translate-y-[65%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 7,
@@ -67,7 +61,6 @@ export const productData = [
     description:
       "Barrier (MCB) adalah sebuah struktur pembatas yang terbuat dari beton dan dipasang di tengah jalan raya untuk mencegah kendaraan melintas ke jalur yang berlawanan arah",
     classFalse: "translate-y-[68%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 8,
@@ -77,7 +70,6 @@ export const productData = [
     description:
       "Pagar Beton adalah jenis pagar yang terbuat dari beton, yaitu campuran semen, pasir, kerikil, dan air.",
     classFalse: "translate-y-[57%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 9,
@@ -87,7 +79,6 @@ export const productData = [
     description:
       "Tiang kolom dalam beton adalah struktur penyangga yang terbuat dari beton bertulang besi yang berfungsi untuk menopang beban lantai dan atap di atasnya. ",
     classFalse: "translate-y-[64%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 10,
@@ -97,7 +88,6 @@ export const productData = [
     description:
       "Pipa Buis adalah jenis pipa yang terbuat dari beton bertulang atau beton pracetak yang berbentuk silinder. ",
     classFalse: "translate-y-[60%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 11,
@@ -107,7 +97,6 @@ export const productData = [
     description:
       "Paving block adalah salah satu jenis bahan bangunan yang digunakan untuk menutup permukaan tanah dengan cara menyusun blok-blok beton berbentuk persegi atau segi lainnya ",
     classFalse: "translate-y-[67%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 5,
@@ -117,7 +106,6 @@ export const productData = [
     description:
       "Sheet Pile adalah material konstruksi yang berbentuk lembaran tipis dan panjang yang digunakan untuk membuat dinding penahan tanah atau air.",
     classFalse: "translate-y-[63%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
   {
     id: 6,
@@ -127,6 +115,5 @@ export const productData = [
     description:
       "Square Piles adalah salah satu jenis tiang pancang yang digunakan untuk mendukung struktur bangunan di atas tanah yang tidak stabil atau lemah.",
     classFalse: "translate-y-[63%]",
-    hashBlur: "LSJ*u98_IUt7IvxYt7of_4ITf5kC"
   },
 ];

@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { useState, useCallback, useEffect, useRef } from "react";
 import { BiChevronUpCircle } from "react-icons/bi";
 import ContactButton from "./ContactButton";
-import useNextBlurHash from 'use-next-blurhash'
 
 interface productCardProps {
   hash: string;
@@ -11,7 +10,6 @@ interface productCardProps {
   title: String;
   description: String;
   classFalse: String;
-  hashBlur: string;
 }
 
 const ProductCard: React.FC<productCardProps> = ({
@@ -20,7 +18,6 @@ const ProductCard: React.FC<productCardProps> = ({
   title,
   description,
   classFalse,
-  hashBlur
 }) => {
   const [clicked, setClicked] = useState(false);
 
@@ -44,9 +41,6 @@ const ProductCard: React.FC<productCardProps> = ({
     return () => window.removeEventListener("mousedown", handler);
   }, [clicked]);
 
-
-  const [blurDataUrl] = useNextBlurHash(hashBlur)
-
   return (
     <div
       className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow h-[300px] w-[300px] mx-auto rounded-lg"
@@ -62,9 +56,8 @@ const ProductCard: React.FC<productCardProps> = ({
           className={`${
             clicked ? "rotate-3 scale-125 blur-[2px]" : ""
           } h-full w-full object-cover transition-transform duration-500 rounded-lg group-hover:rotate-3 group-hover:scale-125 group-hover:blur-[2px] pointer-events-none `}
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={blurDataUrl}
+          loading="eager"
+          priority={true}
         />
       </div>
       <div
