@@ -16,7 +16,6 @@ const Hero = ({ className }: { className: string }) => {
           height={2000}
           alt="Hero"
           className="w-full object-cover h-screen brightness-75 pointer-events-none"
-          loading="lazy"
         />
       </motion.div>
       {/* <Image src="/assets/images/Header.png" width={1000} height={1000} alt="Hero" className="w-full object-cover h-[100vw] md:h-[56.25vw] brightness-75 pointer-events-none"/> */}

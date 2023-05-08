@@ -9,6 +9,9 @@ const nextConfig = {
         hostname: 'iili.io',
         port: '',
       }
+    ],
+    domains: [
+      'res.cloudinary.com'
     ]
   }
 }

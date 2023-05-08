@@ -45,7 +45,6 @@ export default function Home() {
       title={item.title}
       description={item.description}
       classFalse={item.classFalse}
-      blurDataUrl={item.blurDataUrl}
     />
   ));
 
@@ -97,10 +96,13 @@ export default function Home() {
                 fasilitas produksi yang modern dan berkualitas, serta tim
                 profesional yang berkompeten dan berdedikasi.
               </p>
-              <Link
-                href="/about"
-              >
-                <Button w={{ base: 'full', md: 'auto' }} colorScheme='red' variant='outline' _hover={{ bgColor:'red.500', color: 'white' }}>
+              <Link href="/about">
+                <Button
+                  w={{ base: "full", md: "auto" }}
+                  colorScheme="red"
+                  variant="outline"
+                  _hover={{ bgColor: "red.500", color: "white" }}
+                >
                   Selengkapnya
                 </Button>
               </Link>

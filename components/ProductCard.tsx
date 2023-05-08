@@ -2,15 +2,15 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useCallback, useEffect, useRef } from "react";
 import { BiChevronUpCircle } from "react-icons/bi";
+import { GridLoader } from "react-spinners";
 import ContactButton from "./ContactButton";
 
 interface productCardProps {
   hash: string;
-  image: String;
+  image: string;
   title: String;
   description: String;
   classFalse: String;
-  blurDataUrl: string;
 }
 
 const ProductCard: React.FC<productCardProps> = ({
@@ -19,7 +19,6 @@ const ProductCard: React.FC<productCardProps> = ({
   title,
   description,
   classFalse,
-  blurDataUrl
 }) => {
   const [clicked, setClicked] = useState(false);
 
@@ -49,18 +48,17 @@ const ProductCard: React.FC<productCardProps> = ({
       onClick={toggleClicked}
       ref={cardRef}
     >
-      <div className="h-[300px] w-[300px] ">
+      <div className="h-[300px] w-[300px] justify-center flex items-center relative bg-gray-100">
+        <GridLoader color='#ef4444' />
         <Image
-          src={`/assets/images/${image}.jpg`}
+          src={image}
           alt="product"
           width={500}
           height={500}
           className={`${
             clicked ? "rotate-3 scale-125 blur-[2px]" : ""
-          } h-full w-full object-cover transition-transform duration-500 rounded-lg group-hover:rotate-3 group-hover:scale-125 group-hover:blur-[2px] pointer-events-none `}
+          } h-full w-full object-cover transition-transform duration-500 rounded-lg group-hover:rotate-3 group-hover:scale-125 group-hover:blur-[2px] pointer-events-none absolute`}
           loading="lazy"
-          placeholder="blur"
-          blurDataURL={blurDataUrl}
         />
       </div>
       <div
@@ -88,7 +86,13 @@ const ProductCard: React.FC<productCardProps> = ({
         >
           {description}
         </p>
-        <ContactButton href={`product/#${hash}`} borderColor="white" hoverBgColor="red.500" color="white" hoverColor="white">
+        <ContactButton
+          href={`product/#${hash}`}
+          borderColor="white"
+          hoverBgColor="red.500"
+          color="white"
+          hoverColor="white"
+        >
           Detail
         </ContactButton>
         {/* <button type="button" onClick={() => router.push({ pathname: 'product', hash: hash })} className="rounded-lg bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
