@@ -153,7 +153,7 @@ export default function Contact() {
                       </Link>
                       <div className="mt-3">
                         <ContactButton
-                          href="https://wa.link/0merpx"
+                          href="https://wa.link/ivfbi6"
                           borderColor="green.600"
                           color="green.600"
                           hoverBgColor="green.600"
