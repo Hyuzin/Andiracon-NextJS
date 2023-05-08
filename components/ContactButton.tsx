@@ -10,7 +10,9 @@ interface contactProps {
   color: string;
   hoverBgColor: string;
   hoverColor: string;
+  className?: string;
   children: React.ReactNode;
+  height?: string;
 }
 
 const ContactButton: React.FC<contactProps> = ({
@@ -19,7 +21,9 @@ const ContactButton: React.FC<contactProps> = ({
   color,
   hoverBgColor,
   hoverColor,
+  className,
   children,
+  height
 }) => {
   const [state, setState] = useState(false);
 
@@ -31,7 +35,7 @@ const ContactButton: React.FC<contactProps> = ({
   }, []);
   
   return (
-    <Link href={href}>
+    <Link href={href} className={className}>
       <Button
         variant="outline"
         borderColor={borderColor}
@@ -41,6 +45,7 @@ const ContactButton: React.FC<contactProps> = ({
         _active={{ bgColor: hoverBgColor, color: hoverColor }}
         isLoading={state}
         onClick={buttonClick}
+        height={height}
       >
         {children}
       </Button>

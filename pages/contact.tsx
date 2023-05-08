@@ -106,42 +106,63 @@ export default function Contact() {
               </div>
               <div className="pl-5 pb-5">
                 <div className="py-5 pt-10 md:pt-5">
-                  <span className="font-semibold"> Alamat : </span> <br /> Jl.
-                  Baru Underpass Ruko Puri Sentosa Blok A No.1 Bekasi
+                  <span className="font-bold"> ALAMAT</span> <br /> Jl. Baru
+                  Underpass Ruko Puri Sentosa Blok A No.1 Bekasi
                   Timur - Kota Bekasi
                 </div>
                 <div className="pb-5 tracking-widest">
-                  <span className="font-semibold"> No : </span> <br />
-                  <Link
-                    href="tel:+6282123886656"
-                    className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
-                  >
-                    0821 - 2388 - 6656
-                  </Link>
-                </div>
-                <div className="pb-5 flex flex-col gap-3">
-                  <span className="font-semibold">Social Media: </span>
-                  <div className="grid grid-cols-2 gap-x-0 gap-y-3">
-                    <ContactButton
-                      href="https://wa.link/0merpx"
-                      borderColor="green.600"
-                      color="green.600"
-                      hoverBgColor="green.600"
-                      hoverColor="white"
-                    >
-                      WhatsApp
-                      <FaWhatsapp className="ml-2" />
-                    </ContactButton>
-                    <ContactButton
-                      href="https://www.linkedin.com/in/imam-wahyudi-owner-andiracon-precast-concrete-134a251a8"
-                      borderColor="blue.900"
-                      color="blue.900"
-                      hoverBgColor="blue.900"
-                      hoverColor="white"
-                    >
-                      LinkedIn
-                      <FaLinkedin className="ml-2" />
-                    </ContactButton>
+                  <span className="font-bold"> KONTAK</span> <br /> 
+                  <div className="grid grid-cols-1 gap-2">
+                    <p className="flex flex-col gap-1">
+                      <span className="font-medium"> Imam Wahyudi :</span>
+                      <Link
+                        href="tel:+6282123886656"
+                        className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
+                      >
+                        0821 - 2388 - 6656
+                      </Link>
+                      <div className="mt-2 grid grid-cols-2 gap-7">
+                        <ContactButton
+                          href="https://wa.link/0merpx"
+                          borderColor="green.600"
+                          color="green.600"
+                          hoverBgColor="green.600"
+                          hoverColor="white"
+                        >
+                          Whatsapp <FaWhatsapp size={20} className='ml-2'/>
+                        </ContactButton>
+                        <ContactButton
+                          href="https://www.linkedin.com/in/imam-wahyudi-owner-andiracon-precast-concrete-134a251a8"
+                          borderColor="blue.900"
+                          color="blue.900"
+                          hoverBgColor="blue.900"
+                          hoverColor="white"
+                        >
+                          LinkedIn <FaLinkedin size={25} className='ml-2'/>
+                        </ContactButton>
+                      </div>
+                    </p>
+                    <p>
+                      <span className="font-medium"> Jessa :</span>
+                      <br />
+                      <Link
+                        href="tel:+6289692605517"
+                        className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
+                      >
+                        0896 - 9260 - 5517
+                      </Link>
+                      <div className="mt-3">
+                        <ContactButton
+                          href="https://wa.link/0merpx"
+                          borderColor="green.600"
+                          color="green.600"
+                          hoverBgColor="green.600"
+                          hoverColor="white"
+                        >
+                          Whatsapp <FaWhatsapp size={20} className='ml-2'/>
+                        </ContactButton>
+                      </div>
+                    </p>
                   </div>
                 </div>
               </div>
