@@ -31,7 +31,6 @@ export default function Product() {
               <Link
                 to="uditch"
                 smooth={true}
-                spy={true}
                 offset={-100}
                 duration={500}
               >

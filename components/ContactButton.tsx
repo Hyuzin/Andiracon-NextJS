@@ -21,7 +21,7 @@ const ContactButton: React.FC<contactProps> = ({
   color,
   hoverBgColor,
   hoverColor,
-  className,
+  className = 'text-sm flex flex-row',
   children,
   height
 }) => {
@@ -35,7 +35,7 @@ const ContactButton: React.FC<contactProps> = ({
   }, []);
   
   return (
-    <Link href={href} className={className}>
+    <Link href={href}>
       <Button
         variant="outline"
         borderColor={borderColor}
@@ -47,7 +47,7 @@ const ContactButton: React.FC<contactProps> = ({
         onClick={buttonClick}
         height={height}
       >
-        {children}
+        <span className={className}>{children}</span>
       </Button>
     </Link>
   );

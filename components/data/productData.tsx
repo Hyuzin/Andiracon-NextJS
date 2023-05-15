@@ -10,7 +10,7 @@ export const productData = [
   },
   {
     id: 2,
-    image: "/assets/images/reinforcoed-concrete-pipe.jpg",
+    image: "/assets/images/reinforcoed-concrete-pipe1.jpg",
     title: "RCP",
     hash: "rcp",
     description:
@@ -55,7 +55,7 @@ export const productData = [
   },
   {
     id: 7,
-    image: "/assets/images/mcb.jpg",
+    image: "/assets/images/mcb1.jpg",
     title: "Barrier (MCB)",
     hash: "barrier",
     description:

@@ -110,57 +110,84 @@ export default function Contact() {
                   Underpass Ruko Puri Sentosa Blok A No.1 Bekasi
                   Timur - Kota Bekasi
                 </div>
-                <div className="pb-5 tracking-widest">
-                  <span className="font-bold"> KONTAK</span> <br /> 
-                  <div className="grid grid-cols-1 gap-2">
-                    <p className="flex flex-col gap-1">
+                <div className="pb-5 tracking-widest text-sm">
+                  <span className="font-bold"> KONTAK</span> <br />
+                  <div className="grid grid-cols-1 gap-4">
+                    <p className="">
                       <span className="font-medium"> Imam Wahyudi :</span>
-                      <Link
-                        href="tel:+6282123886656"
-                        className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
-                      >
-                        0821 - 2388 - 6656
-                      </Link>
-                      <div className="mt-2 grid grid-cols-2 gap-7">
-                        <ContactButton
-                          href="https://wa.link/0merpx"
-                          borderColor="green.600"
-                          color="green.600"
-                          hoverBgColor="green.600"
-                          hoverColor="white"
+                      <div className="flex flex-row">
+                        <Link
+                          href="tel:+6282123886656"
+                          className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
                         >
-                          Whatsapp <FaWhatsapp size={20} className='ml-2'/>
-                        </ContactButton>
-                        <ContactButton
-                          href="https://www.linkedin.com/in/imam-wahyudi-owner-andiracon-precast-concrete-134a251a8"
-                          borderColor="blue.900"
-                          color="blue.900"
-                          hoverBgColor="blue.900"
-                          hoverColor="white"
+                          0821 - 2388 - 6656
+                        </Link>
+                        <Link href="https://wa.link/og2z09">
+                          <FaWhatsapp
+                            size={20}
+                            className="ml-2 fill-green-600"
+                          />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/imam-wahyudi-owner-andiracon-precast-concrete-134a251a8">
+                          <FaLinkedin
+                            size={25}
+                            className="ml-2 fill-blue-950"
+                          />
+                        </Link>
+                      </div>
+                    </p>
+                    <p className="">
+                      <span className="font-medium"> Jessa :</span>
+                      <br />
+                      <div className="flex flex-row">
+                        <Link
+                          href="tel:+6289692605517"
+                          className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
                         >
-                          LinkedIn <FaLinkedin size={25} className='ml-2'/>
-                        </ContactButton>
+                          0896 - 9260 - 5517
+                        </Link>
+                        <Link href="https://wa.link/ivfbi6">
+                          <FaWhatsapp
+                            size={20}
+                            className="ml-2 fill-green-600"
+                          />
+                        </Link>
                       </div>
                     </p>
                     <p>
-                      <span className="font-medium"> Jessa :</span>
+                      <span className="font-medium"> Dhafi :</span>
                       <br />
-                      <Link
-                        href="tel:+6289692605517"
-                        className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
-                      >
-                        0896 - 9260 - 5517
-                      </Link>
-                      <div className="mt-3">
-                        <ContactButton
-                          href="https://wa.link/ivfbi6"
-                          borderColor="green.600"
-                          color="green.600"
-                          hoverBgColor="green.600"
-                          hoverColor="white"
+                      <div className="flex flex-row">
+                        <Link
+                          href="tel:+6281387008956"
+                          className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
                         >
-                          Whatsapp <FaWhatsapp size={20} className='ml-2'/>
-                        </ContactButton>
+                          0813-8700-8956
+                        </Link>
+                        <Link href="https://wa.link/4y6o5m">
+                          <FaWhatsapp
+                            size={20}
+                            className="ml-2 fill-green-600"
+                          />
+                        </Link>
+                      </div>
+                    </p>
+                    <p>
+                      <span className="font-medium"> Libran :</span>
+                      <br />
+                      <div className="flex flex-row">
+                        <Link
+                          href="tel:+6285161760847"
+                          className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
+                        >
+                          0851-6176-0847
+                        </Link>
+                        <Link href="https://wa.link/91tf7y">
+                          <FaWhatsapp
+                            size={20}
+                            className="ml-2 fill-green-600"
+                          />
+                        </Link>
                       </div>
                     </p>
                   </div>
