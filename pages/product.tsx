@@ -27,14 +27,14 @@ export default function Product() {
           Produk yang tersedia di perusahaan kami.
           <div className="border-2 border-grey md:w-[50%] p-10 my-14">
             <ul className="font-medium text-[15px] list-decimal list-inside">
-              <span className="font-bold text-2xl">Produk</span>
+              <span className="text-2xl font-bold">Produk</span>
               <Link
                 to="uditch"
                 smooth={true}
                 offset={-100}
                 duration={500}
               >
-                <li className="group pt-2 cursor-pointer">
+                <li className="pt-2 cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     U Ditch
                   </span>
@@ -47,7 +47,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Reinforced Concrete Pipes (RCP)
                   </span>
@@ -60,7 +60,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Cover U Ditch
                   </span>
@@ -73,7 +73,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Box Culvert
                   </span>
@@ -86,7 +86,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Sumur Resapan (Porous Well)
                   </span>
@@ -99,7 +99,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Kansteen
                   </span>
@@ -112,7 +112,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Barrier (MCB)
                   </span>
@@ -125,7 +125,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Pagar Beton (Concrete Fence)
                   </span>
@@ -138,7 +138,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Tiang Kolom
                   </span>
@@ -151,7 +151,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Pipa Buis
                   </span>
@@ -164,7 +164,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Paving Block
                   </span>
@@ -177,7 +177,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Sheet Pile
                   </span>
@@ -190,7 +190,7 @@ export default function Product() {
                 offset={-100}
                 duration={500}
               >
-                <li className="group cursor-pointer">
+                <li className="cursor-pointer group">
                   <span className="bg-left-bottom bg-gradient-to-r from-red-500 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Square Pile
                   </span>
@@ -211,7 +211,7 @@ export default function Product() {
           keunggulan, antara lain:
           <br />
           <br />
-          <ul className="list-disc text-red-500 px-4">
+          <ul className="px-4 text-red-500 list-disc">
             <li>
               <div className="text-black">
                 Kualitas beton terjamin karena diproduksi di pabrik dengan
@@ -849,7 +849,7 @@ export default function Product() {
             priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -878,7 +878,7 @@ export default function Product() {
         </ProductSection>
         <ProductSection
           title="Reinforced Concrete Pipes"
-          imageName="reinforcoed-concrete-pipe.jpg"
+          imageName="reinforcoed-concrete-pipe1.jpg"
           hashUrl="rcp"
         >
           <span className="font-medium">Reinforced Concrete Pipe (RCP) </span>
@@ -1092,7 +1092,7 @@ export default function Product() {
             priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -1463,7 +1463,7 @@ export default function Product() {
             priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -1910,7 +1910,7 @@ export default function Product() {
             priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -2082,7 +2082,7 @@ export default function Product() {
             priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -2225,7 +2225,7 @@ export default function Product() {
             priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -2255,7 +2255,7 @@ export default function Product() {
         <ProductSection
           title="Barrier ( MCB )"
           hashUrl="barrier"
-          imageName="mcb.jpg"
+          imageName="mcb1.jpg"
         >
           <span className="font-medium"> Median Concrete Barrier</span> adalah
           sebuah struktur pembatas yang terbuat dari beton dan dipasang di
@@ -2344,7 +2344,7 @@ export default function Product() {
             priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -2436,7 +2436,7 @@ export default function Product() {
           priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -2608,7 +2608,7 @@ export default function Product() {
           priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -2800,7 +2800,7 @@ export default function Product() {
           priority={true}
           />
           <div className="font-normal">
-            <p className="text-center py-10 font-semibold">
+            <p className="py-10 font-semibold text-center">
               Spesifikasi Produk
             </p>
             <dt>Mutu Beton : </dt>
@@ -2937,7 +2937,7 @@ export default function Product() {
           Jenis-jenis sheet pile antara lain:
           <br />
           <br />
-          <ul className="list-disc text-red-500 px-4">
+          <ul className="px-4 text-red-500 list-disc">
             <li>
               <div className="text-black">
                 Kantilever: sheet pile yang mampu menahan beban lateral dengan
@@ -3348,7 +3348,7 @@ export default function Product() {
           <br /> Square Piles memiliki beberapa keuntungan, antara lain:
           <br />
           <br />
-          <ul className="list-disc text-red-500 px-4">
+          <ul className="px-4 text-red-500 list-disc">
             <li>
               <div className="text-black">
                 Kapasitas beban lebih tinggi karena luas penampang yang besar
@@ -3438,7 +3438,7 @@ export default function Product() {
               </tr>
             </tbody>
           </TableComponent>
-          <p className="text-center py-10 font-semibold">
+          <p className="py-10 font-semibold text-center">
             Spesifikasi Standar Solid Square Pile
           </p>
           <Image
