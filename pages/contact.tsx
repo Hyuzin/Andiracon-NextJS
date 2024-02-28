@@ -172,24 +172,6 @@ export default function Contact() {
                         </Link>
                       </div>
                     </p>
-                    <p>
-                      <span className="font-medium"> Libran :</span>
-                      <br />
-                      <div className="flex flex-row">
-                        <Link
-                          href="tel:+6285161760847"
-                          className="underline underline-offset-8 decoration-red-500 hover:text-red-500"
-                        >
-                          0851-6176-0847
-                        </Link>
-                        <Link href="https://wa.link/91tf7y">
-                          <FaWhatsapp
-                            size={20}
-                            className="ml-2 fill-green-600"
-                          />
-                        </Link>
-                      </div>
-                    </p>
                   </div>
                 </div>
               </div>
